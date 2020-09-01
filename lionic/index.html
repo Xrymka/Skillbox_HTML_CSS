@@ -11,24 +11,24 @@
 
 <body>
   <header class="header">
-    <div class="container header__container">
-      <a class="header__logo" href="#">
-        <img src="img/logo.png" alt="logo">
+    <div class="container">
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="logo" class="logo-img">
       </a>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a class="header__link header__link-active" href="#">Home</a></li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Products</a></li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Our Services</a></li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Pricing</a></li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">About Us</a></li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Contact Us</a></li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link header__link-active" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Services</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a></li>
         </ul>
         <button class="header__btn btn">
           Free Trial
@@ -37,125 +37,134 @@
     </div>
   </header>
   <main class="main">
-    <!--first__section-->
-    <section class="first__section first__section-container">
+    <!--section-hero-->
+    <section class="section-hero">
       <div class="container">
-        <h1 class="first__title section-title">
+        <h1 class="hero-title">
           This is simply a smarter way to make your legal online
         </h1>
-        <p class="first__description">
+        <p class="hero-description">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
         </p>
-        <button class="first__btn btn">
+        <button class="hero-btn btn">
           free 30 day trial
         </button>
-        <div class="first__secure">
+        <div class="hero-secure">
           SSL secured connection
         </div>
       </div> <!--/container-->
-    </section> <!--/first__section-->
+    </section> <!--/section-hero-->
 
-    <!--wedo-->
-    <section class="wedo">
+    <!--section-wedo-->
+    <section class="section-wedo">
       <div class="container">
-        <h2 class="wedo__title section-title">What We Do</h2>
-      <p class="wedo__subtitle section-subtitle">Lionic guides you on making decisions for all aspects of your end-of-life plans.
+        <h2 class="wedo-title">What We Do</h2>
+      <p class="wedo-description">Lionic guides you on making decisions for all aspects of your end-of-life plans.
       </p>
-      <ul class="wedo__items">
-        <li class="wedo__item">
-          <img class="wedo__item__img" src="#" alt="legacy">
-          <h3 class="wedo__item_title">Your Legacy</h3>
-          <p class="wedo__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+      <ul class="wedo-list">
+        <li class="wedo-item">
+          <a href="#" class="wedo-item-link">
+            <img class="wedo-item-img" src="#" alt="legacy">
+            <h3 class="wedo-item-title">Your Legacy</h3>
+            <p class="wedo-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </a>
         </li>
-        <li class="wedo__item">
-          <img class="wedo__item__img" src="#" alt="health">
-          <h3 class="wedo__item_title">Your Health</h3>
-          <p class="wedo__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+        <li class="wedo-item">
+          <a href="#" class="wedo-item-link">
+            <img class="wedo-item-img" src="#" alt="health">
+            <h3 class="wedo-item-title">Your Health</h3>
+            <p class="wedo-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </a>
         </li>
-        <li class="wedo__item">
-          <img class="wedo__item__img" src="#" alt="memorial">
-          <h3 class="wedo__item_title">Funeral & Memorial</h3>
-          <p class="wedo__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+        <li class="wedo-item">
+          <a href="#" class="wedo-item-link">
+            <img class="wedo-item-img" src="#" alt="memorial">
+            <h3 class="wedo-item-title">Funeral & Memorial</h3>
+            <p class="wedo-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </a>
         </li>
-        <li class="wedo__item">
-          <img class="wedo__item__img" src="#" alt="legal">
-          <h3 class="wedo__item_title">Legal & Financial</h3>
-          <p class="wedo__item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+        <li class="wedo-item">
+          <a href="#" class="wedo-item-link">
+            <img class="wedo-item-img" src="#" alt="legal">
+            <h3 class="wedo-item-title">Legal & Financial</h3>
+            <p class="wedo-item-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </a>
         </li>
       </ul>
       </div> <!--/container-->
-    </section> <!--/wedo-->
+    </section> <!--/section-wedo-->
 
-    <section class="reviews">
+    <!--section-clients-->
+    <section class="section-clients">
       <div class="container">
-        <h2 class="reviews__title section-title">Our Happy Clients</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <p class="reviews__item__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
-            <div class="reviews__item__client">
-              <div class="reviews__item__img">
-                <img src="https://via.placeholder.com/65" alt="photo1" class="reviews__item__image">
+        <h2 class="clients-title">Our Happy Clients</h2>
+        <ul class="clients-list">
+          <li class="clients-item">
+            <p class="clients-item-review">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+            <div class="clients-item-info">
+              <div class="clients-item-img">
+                <img src="https://via.placeholder.com/65" alt="photo1" class="clients-item-avatar">
               </div>
-              <div class="reviews__item__info">
-                <div class="reviews__item__name">John Armstrong</div>
-                <div class="reviews__item__who">Customer</div>
-              </div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__item__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
-            <div class="reviews__item__client">
-              <div class="reviews__item__img">
-                <img src="https://via.placeholder.com/65" alt="photo2" class="reviews__item__image">
-              </div>
-              <div class="reviews__item__info">
-                <div class="reviews__item__name">Elizabeth Martin</div>
-                <div class="reviews__item__who">Customer</div>
+              <div class="clients-item-user">
+                <div class="clients-item-username">John Armstrong</div>
+                <div class="clients-item-user-who">Customer</div>
               </div>
             </div>
           </li>
-          <li class="reviews__item">
-            <p class="reviews__item__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
-            <div class="reviews__item__client">
-              <div class="reviews__item__img">
-                <img src="https://via.placeholder.com/65" alt="photo3" class="reviews__item__image">
+          <li class="clients-item">
+            <p class="clients-item-review">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+            <div class="clients-item-info">
+              <div class="clients-item-img">
+                <img src="https://via.placeholder.com/65" alt="photo1" class="clients-item-avatar">
               </div>
-              <div class="reviews__item__info">
-                <div class="reviews__item__name">Elizabeth Martin</div>
-                <div class="reviews__item__who">Customer</div>
+              <div class="clients-item-user">
+                <div class="clients-item-username">Elizabeth Martin</div>
+                <div class="clients-item-user-who">Customer</div>
+              </div>
+            </div>
+          </li>
+          <li class="clients-item">
+            <p class="clients-item-review">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.</p>
+            <div class="clients-item-info">
+              <div class="clients-item-img">
+                <img src="https://via.placeholder.com/65" alt="photo1" class="clients-item-avatar">
+              </div>
+              <div class="clients-item-user">
+                <div class="clients-item-username">Elizabeth Martin</div>
+                <div class="clients-item-user-who">Customer</div>
               </div>
             </div>
           </li>
         </ul>
       </div> <!--/container-->
-    </section> <!--/reviews-->
+    </section> <!--/section-clients-->
 
-    <!--contacts-->
-    <section class="contacts">
+    <!--section-contacts-->
+    <section class="section-contacts">
       <div class="container">
-        <h2 class="contact__title section-title">Contacts</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <img src="#" alt="map" class="contacts__item__img">
-            <div class="contacts_item__title">Visit Us</div>
-            <p class="contacts__item__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit.
+        <h2 class="contacts-title">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <img src="#" alt="map" class="contacts-item-img">
+            <div class="contacts-item-title">Visit Us</div>
+            <p class="contacts-item-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit.
             </p>
           </li>
-          <li class="contacts__item">
-            <img src="#" alt="phone" class="contacts__item__img">
-            <div class="contacts_item__title">Call Us</div>
-            <a href="tel:+79876543210" class="contacts_item__number">+7 (987) 654-32-10</a>
-            <a href="tel:+71234567890" class="contacts_item__number">+7 (123) 456-78-90</a>
+          <li class="contacts-item">
+            <img src="#" alt="phone" class="contacts-item-img">
+            <div class="contacts-item-title">Call Us</div>
+            <a href="tel:+79876543210" class="contacts-item-number">+7 (987) 654-32-10</a>
+            <a href="tel:+71234567890" class="contacts-item-number">+7 (123) 456-78-90</a>
           </li>
-          <li class="contacts__item">
-            <img src="#" alt="letter" class="contacts__item__img">
-            <div class="contacts_item__title">Email Us</div>
-            <a href="mailto:example@example.com" class="contacts_item__address">example@example.com</a>
-            <a href="mailto:support@example.com" class="contacts_item__address">support@example.com</a>
+          <li class="contacts-item">
+            <img src="#" alt="letter" class="contacts-item-img">
+            <div class="contacts-item-title">Email Us</div>
+            <a href="mailto:example@example.com" class="contacts-item-address">example@example.com</a>
+            <a href="mailto:support@example.com" class="contacts-item-address">support@example.com</a>
           </li>
         </ul>
       </div> <!--/container-->
-    </section> <!--/contacts-->
+    </section> <!--/section-contacts-->
 
     <section class="section__form">
       <!-- Later-->
@@ -165,44 +174,44 @@
   <!--footer-->
   <footer class="footer">
     <div class="container">
-      <div class="footer__left">
-        <a href="#">
-          <img src="img/logo.png" alt="logo" class="logo">
+      <div class="footer-left">
+        <a class="logo" href="#">
+          <img src="img/logo.png" alt="logo" class="logo-img">
         </a>
-        <span class="footer__copy">
+        <small class="footer-copy">
           Copyright ©2017. All Right Reserved
-        </span>
+        </small>
       </div>
-      <div class="footer__right">
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">About Us</a>
+      <div class="footer-right">
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">About Us</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Contact Us</a>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Contact Us</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Privacy Policy</a>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Privacy Policy</a>
             </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Terms Condition</a>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Terms Condition</a>
             </li>
           </ul>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="social__link">
-                <img src="#" alt="" class="social__icon">
+          <ul class="footer-social-list">
+            <li class="social-item">
+              <a href="social-link">
+                <img src="#" alt="twitter" class="social-icon">
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img src="#" alt="" class="social__icon">
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="#" alt="" class="social-icon">
               </a>
             </li>
-            <li class="social__item">
-              <a href="social__link">
-                <img src="#" alt="" class="social__icon">
+            <li class="social-item">
+              <a href="social-link">
+                <img src="#" alt="" class="social-icon">
               </a>
             </li>
           </ul>

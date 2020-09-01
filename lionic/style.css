@@ -50,6 +50,7 @@ ul {
   color: #fff;
   background-color: #3172b9;
   border: 1px solid #3172b9;
+  cursor: pointer;
 
   border-radius: 4px;
 }
