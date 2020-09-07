@@ -6,3 +6,4 @@ HTML/CSS
 3. Basic CSS
 4. Work with layout
 5. Layout. HTML
+6. Layout. Flexbox
