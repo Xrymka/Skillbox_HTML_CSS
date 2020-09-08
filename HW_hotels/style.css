@@ -285,8 +285,10 @@ ul {
 
 .accommodation-link {
   position: absolute;
-  top: 80%;
+  top: 82%;
   left: 10%;
 
+  font-size: 22px;
+  line-height: 0.6875;
   color: #fff;
 }
