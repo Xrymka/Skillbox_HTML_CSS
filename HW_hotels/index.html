@@ -51,7 +51,7 @@
         </nav>
         <input type="search" class="header-search" value="Поиск">
       </div>
-  </header> <!--/header-->  
+  </header> <!--/header-->
 
   <!--main-->
   <main class="main">
@@ -59,28 +59,30 @@
     <!--section-booking-->
     <section class="section-booking">
       <h2 class="section-title">Быстрая бронь</h2>
-      <input class="booking-item" type="text" value="Город">
-      <input class="booking-item" type="text" value="Категория номера">
-      <input class="booking-item" type="date" value="Дата заселения">
-      <input class="booking-item" type="number" value="Количество ночей">
-      <input class="booking-item" type="number" value="Количество гостей">
-      <input class="booking-item-btn" type="button" value="Найти номер">
-      <div class="offer">
-        <span class="offer-number">9756</span> предложений доступно
+      <div class="booking-form">
+        <input class="booking-item" type="text" placeholder="Город">
+        <input class="booking-item" type="text" placeholder="Категория номера">
+        <input class="booking-item" type="date" placeholder="Дата заселения">
+        <input class="booking-item" type="number" placeholder="Количество ночей">
+        <input class="booking-item" type="number" placeholder="Количество гостей">
+        <input class="booking-item-btn" type="button" value="Найти номер">
+        <span class="offer-list"><a href="#" class="offer-link">9756</a> предложений доступно</span>
       </div>
     </section> <!--/section-booking-->
 
     <!--special-->
     <article class="special">
-      <h2 class="section-title">Спецпредложение</h2>
+      <h2 class="article-title">Спецпредложение</h2>
       <img src="img/special.jpeg" alt="hotel-room" class="special-img">
-      <h3 class="special-subtitle">
-        Номера категории люкс
-      </h3>
-      <p class="special-price">
-        от 5 000 р
-      </p>
-      <a href="#" class="special-more">Подробнее</a>
+      <div class="special-info">
+        <h3 class="special-subtitle">
+          Номера категории люкс
+        </h3>
+        <p class="special-price">
+          от 5 000 р
+          <a href="#" class="special-more">Подробнее</a>
+        </p>
+      </div>
     </article> <!--/special-->
 
     <!--section-about-->
@@ -138,49 +140,57 @@
       <ul class="advantages-list">
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 1</h4>
+            <h4 class="card-title">Преимущество 1</h4>
+            <img src="img/icons/bath.png" alt="bath" class="advantages-img">
             <p class="card-text">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 2</h4>
+            <h4 class="card-title">Преимущество 2</h4>
+            <img src="img/icons/hanger.png" alt="hanger" class="advantages-img">
             <p class="card-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 3</h4>
+            <h4 class="card-title">Преимущество 3</h4>
+            <img src="img/icons/heating.png" alt="heating" class="advantages-img">
             <p class="card-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 4</h4>
+            <h4 class="card-title">Преимущество 4</h4>
+            <img src="img/icons/key.png" alt="key" class="advantages-img">
             <p class="card-text">Повседневная практика показывает, что сложившаяся структура организации</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 5</h4>
+            <h4 class="card-title">Преимущество 5</h4>
+            <img src="img/icons/parking.png" alt="parking" class="advantages-img">
             <p class="card-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 6</h4>
+            <h4 class="card-title">Преимущество 6</h4>
+            <img src="img/icons/reception.png" alt="reception" class="advantages-img">
             <p class="card-text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 7</h4>
+            <h4 class="card-title">Преимущество 7</h4>
+            <img src="img/icons/security-box.png" alt="security-box" class="advantages-img">
             <p class="card-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
           </article>
         </li>
         <li class="advantages-item">
           <article class="advantages-card">
-            <h4 class="card-title" style="visibility: hidden;">Преимущество 8</h4>
+            <h4 class="card-title">Преимущество 8</h4>
+            <img src="img/icons/swimming-pool.png" alt="swimming-pool" class="advantages-img">
             <p class="card-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
           </article>
         </li>
@@ -377,7 +387,7 @@
         </li> <!--/accommodation-list-item-->
       </ul> <!--/accommodation-list-->
     </section> <!--/section-accommodation-->
-    
+
     <!--section-contacts-->
     <section class="section-contacts"></section> <!--/section-contacts-->
 

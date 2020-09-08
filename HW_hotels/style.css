@@ -23,8 +23,18 @@ a {
   color: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Container
@@ -76,8 +86,6 @@ img {
   align-items: center;
 
   padding: 0;
-
-  list-style: none;
 }
 
 .nav-item:not(:last-child) {
@@ -91,4 +99,194 @@ img {
   margin-left: 125px;
 
   background-color: #f1f1f1;
+}
+
+/* Section-title
+===================*/
+.section-title {
+  margin: 70px 0 20px 50px;
+}
+
+/* Booking
+===================*/
+.section-booking {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 520px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking-item {
+  min-width: 520px;
+  min-height: 70px;
+
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.booking-item-btn {
+  padding: 30px;
+}
+
+.offer-list {
+  margin-left: 30px;
+}
+
+/* Special
+===================*/
+.special {
+  position: relative;
+  max-height: 610px;
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-left: 45px;
+}
+
+.article-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.special-info {
+  position: absolute;
+  max-width: 320px;
+  top: 60%;
+  left: 7%;
+  z-index: 1;
+}
+
+.special-subtitle {
+  font-size: 66px;
+  line-height: 0.87;
+  font-weight: bold;
+  color:#fff;
+}
+
+.special-price {
+  margin-top: 40px;
+}
+
+.special-more {
+  margin-left: 45px;
+}
+
+/* About
+===================*/
+.about-text {
+  max-width: 880px;
+  margin-left: 50px;
+}
+
+
+/* Services
+===================*/
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  max-width: 570px;
+  margin-bottom: 25px;
+
+  background-color: #fff;
+}
+
+.services-item-title,
+.services-item-text {
+  margin-left: 45px;
+}
+
+.services-item-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.services-item-text {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+
+
+/* Advantages
+===================*/
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  max-width: 275px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+}
+
+.advantages-card {
+  margin: 10px 45px 40px 45px;
+}
+
+.card-title {
+  visibility: hidden;
+}
+
+
+/* Accommodation
+===================*/
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accommodation-list-item {
+  max-height: 440px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+}
+
+.accommodation-hotel {
+  position: relative;
+}
+
+.accommodation-info,
+.accommodation-name,
+.accommodation-place,
+.accommodation-room {
+  margin-left: 45px;
+}
+
+.accommodation-price,
+.accommodation-stars {
+  display: inline-block;
+}
+
+.accommodation-stars {
+  margin-left: 35px;
+}
+
+.accommodation-place {
+  display: block;
+}
+
+.accommodation-room {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+
+.accommodation-link {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+
+  color: #fff;
 }
