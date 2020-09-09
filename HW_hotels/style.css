@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/MullerLight.woff2') format('woff2'),
+  url('fonts/MullerLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MullerRegular.woff2') format('woff2'),
+  url('fonts/MullerRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/MullerMedium.woff2') format('woff2'),
+  url('fonts/MullerMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/MullerBold.woff2') format('woff2'),
+  url('fonts/MullerBold.woff') format('woff');
+}
+
 *,
 *:before,
 *:after {
@@ -7,10 +39,10 @@
 body {
   margin: 0;
 
-  font-family: 'MullerRegular', sans-serif;
+  font-family: 'Muller', sans-serif;
   font-size: 16px;
   line-height: 2;
-  color: #797979;
+  color: #333;
   background-color: #f1f1f1;
 }
 
@@ -69,6 +101,29 @@ ul {
 
 .header-number {
   margin-left: 25px;
+
+  font-size: 22px;
+  font-weight: 700;
+  color: #666;
+}
+
+.header-account {
+  border: none;
+  background: transparent;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #cc9933;
+}
+
+.header-account-arrow {
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+
+  background: url('img/arrow.png') center center no-repeat transparent;
+  background-size: contain;
+  transform: translateY(2px);
 }
 
 .header-bottom {
@@ -78,6 +133,7 @@ ul {
   min-height: 70px;
   padding: 0 20px;
 
+  border-radius: 12px;
   background-color: #fff;
 }
 
@@ -97,21 +153,35 @@ ul {
   min-height: 48px;
 
   margin-left: 125px;
+  padding-left: 20px;
 
-  background-color: #f1f1f1;
+  border-radius: 15px;
+  border-color: transparent;
+  background: url('img/search.png') right 20px center no-repeat #f1f1f1;
+}
+
+.header-search::placeholder {
+  color: #bebebe;
 }
 
 /* Section-title
 ===================*/
 .section-title {
   margin: 70px 0 20px 50px;
+
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/* Hero
+===================*/
+.hero {
+  display: flex;
 }
 
 /* Booking
 ===================*/
 .section-booking {
-  display: inline-block;
-  vertical-align: middle;
   max-width: 520px;
 }
 
@@ -126,14 +196,38 @@ ul {
 
   margin-bottom: 20px;
   padding-left: 20px;
+
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.booking-item::placeholder {
+  color: #999;
 }
 
 .booking-item-btn {
   padding: 30px;
+
+  font-weight: 700;
+  border-radius: 12px;
+  border-color: transparent;
+  color: #fff;
+  background: #cc9933;
 }
 
 .offer-list {
+  display: flex;
+  align-items: center;
   margin-left: 30px;
+
+  color: #999;
+}
+
+.offer-link {
+  margin-right: 5px;
+
+  font-weight: 500;
+  color: #cc9933;
 }
 
 /* Special
@@ -141,21 +235,18 @@ ul {
 .special {
   position: relative;
   max-height: 610px;
-  display: inline-block;
-  vertical-align: middle;
 
   margin-left: 45px;
 }
 
-.article-title {
-  margin-top: 40px;
-  margin-bottom: 20px;
+.special-img {
+  border-radius: 12px;
 }
 
 .special-info {
   position: absolute;
   max-width: 320px;
-  top: 60%;
+  top: 71.5%;
   left: 7%;
   z-index: 1;
 }
@@ -168,18 +259,30 @@ ul {
 }
 
 .special-price {
-  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+
+  font-size: 35px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .special-more {
-  margin-left: 45px;
+  margin-left: auto;
+
+  font-size: 16px;
+  color: #ffcc66;
 }
 
 /* About
 ===================*/
 .about-text {
-  max-width: 880px;
+  max-width: 881px;
   margin-left: 50px;
+
+  color: #666;
 }
 
 
@@ -195,7 +298,13 @@ ul {
   max-width: 570px;
   margin-bottom: 25px;
 
+  border-radius: 12px;
   background-color: #fff;
+}
+
+.services-pictire {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .services-item-title,
@@ -206,6 +315,10 @@ ul {
 .services-item-title {
   margin-top: 25px;
   margin-bottom: 10px;
+
+  font-size: 22px;
+  font-weight: 500;
+  color: #cc9933;
 }
 
 .services-item-text {
@@ -226,6 +339,7 @@ ul {
   max-width: 275px;
   margin-bottom: 20px;
 
+  border-radius: 12px;
   background-color: #fff;
 }
 

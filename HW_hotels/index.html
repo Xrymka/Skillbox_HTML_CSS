@@ -24,7 +24,10 @@
           </h1>
           <a href="tel:+74953225448" class="header-number">+7 (495) 322 54 48</a>
         </div>
-        <button class="header-account">Личный кабинет</button>
+        <button class="header-account">
+          <span class="header-account-arrow"></span>
+          Личный кабинет
+        </button>
       </div>
       <div class="header-bottom">
         <nav class="nav">
@@ -49,41 +52,44 @@
             </li>
           </ul>
         </nav>
-        <input type="search" class="header-search" value="Поиск">
+        <input type="search" class="header-search" placeholder="Поиск">
       </div>
   </header> <!--/header-->
 
   <!--main-->
   <main class="main">
 
-    <!--section-booking-->
-    <section class="section-booking">
-      <h2 class="section-title">Быстрая бронь</h2>
-      <div class="booking-form">
-        <input class="booking-item" type="text" placeholder="Город">
-        <input class="booking-item" type="text" placeholder="Категория номера">
-        <input class="booking-item" type="date" placeholder="Дата заселения">
-        <input class="booking-item" type="number" placeholder="Количество ночей">
-        <input class="booking-item" type="number" placeholder="Количество гостей">
-        <input class="booking-item-btn" type="button" value="Найти номер">
-        <span class="offer-list"><a href="#" class="offer-link">9756</a> предложений доступно</span>
-      </div>
-    </section> <!--/section-booking-->
+    <!--hero-->
+    <div class="hero">
+      <!--section-booking-->
+      <section class="section-booking">
+        <h2 class="section-title">Быстрая бронь</h2>
+        <div class="booking-form">
+          <input class="booking-item" type="text" placeholder="Город">
+          <input class="booking-item" type="text" placeholder="Категория номера">
+          <input class="booking-item" type="date" placeholder="Дата заселения">
+          <input class="booking-item" type="number" placeholder="Количество ночей">
+          <input class="booking-item" type="number" placeholder="Количество гостей">
+          <input class="booking-item-btn" type="button" value="Найти номер">
+          <span class="offer-list"><a href="#" class="offer-link">9 756</a> предложений доступно</span>
+        </div>
+      </section> <!--/section-booking-->
 
-    <!--special-->
-    <article class="special">
-      <h2 class="article-title">Спецпредложение</h2>
-      <img src="img/special.jpeg" alt="hotel-room" class="special-img">
-      <div class="special-info">
-        <h3 class="special-subtitle">
-          Номера категории люкс
-        </h3>
-        <p class="special-price">
-          от 5 000 р
-          <a href="#" class="special-more">Подробнее</a>
-        </p>
-      </div>
-    </article> <!--/special-->
+      <!--special-->
+      <article class="special">
+        <h2 class="section-title">Спецпредложение</h2>
+        <img src="img/special.jpeg" alt="hotel-room" class="special-img">
+        <div class="special-info">
+          <h3 class="special-subtitle">
+            Номера категории люкс
+          </h3>
+          <p class="special-price">
+            от 5 000 р
+            <a href="#" class="special-more">Подробнее</a>
+          </p>
+        </div>
+      </article> <!--/special-->
+    </div> <!--/hero-->
 
     <!--section-about-->
     <section class="section-about">
