@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 p {
@@ -67,6 +68,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Container
@@ -173,6 +178,15 @@ ul {
   font-weight: 400;
 }
 
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #cc9933;
+  border-right: 2px solid #cc9933;
+  margin-right: 60px;
+  transform: rotate(45deg);
+}
+
 /* Hero
 ===================*/
 .hero {
@@ -213,6 +227,7 @@ ul {
   border-color: transparent;
   color: #fff;
   background: #cc9933;
+  cursor: pointer;
 }
 
 .offer-list {
@@ -364,11 +379,17 @@ ul {
   max-height: 440px;
   margin-bottom: 20px;
 
+  border-radius: 12px;
   background-color: #fff;
 }
 
 .accommodation-hotel {
   position: relative;
+}
+
+.accommodation-picture {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .accommodation-info,
@@ -378,23 +399,43 @@ ul {
   margin-left: 45px;
 }
 
-.accommodation-price,
-.accommodation-stars {
-  display: inline-block;
+.accommodation-info {
+  display: flex;
+}
+
+.accommodation-price {
+  color: #666;
+}
+
+.accommodation-number {
+  font-weight: 700;
+  color: #333;
 }
 
 .accommodation-stars {
   margin-left: 35px;
 }
 
+.accommodation-name {
+  font-weight: 500;
+}
+
 .accommodation-place {
   display: block;
+
+  color: #999;
 }
 
 .accommodation-room {
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 10px 20px;
+
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #cc9933;
+  background-color: transparent;
 }
 
 .accommodation-link {
