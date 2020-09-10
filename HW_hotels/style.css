@@ -179,11 +179,24 @@ button {
 }
 
 .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
   width: 10px;
   height: 10px;
   border-top: 2px solid #cc9933;
   border-right: 2px solid #cc9933;
-  margin-right: 60px;
+  transform: rotate(45deg);
+}
+
+.arrow-big {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(45deg);
 }
 
