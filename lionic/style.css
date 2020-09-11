@@ -395,6 +395,60 @@ ul {
   color: #787878;
 }
 
+/* Form
+================================ */
+.section-form {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.form-title {
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #414141;
+}
+
+.form-description {
+margin-bottom: 60px;
+
+  font-size: 16px;
+  line-height: 1.3;
+  color: #787878;
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  min-width: 250px;
+  padding: 20px 30px 25px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+}
+
+.input::placeholder {
+  font-weight: 300;
+  line-height: 1;
+  color: #787878;
+}
+
+.btn-submit {
+  min-width: 250px;
+  padding: 20px 30px 25px;
+  border: 1px solid #3172b9;
+  border-radius: 30px;
+
+  background-color: #3172b9;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /* Footer
 ================================ */
 .footer-container {

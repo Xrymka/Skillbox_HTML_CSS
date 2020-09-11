@@ -64,15 +64,15 @@
       <!--section-booking-->
       <section class="section-booking">
         <h2 class="section-title">Быстрая бронь</h2>
-        <div class="booking-form">
-          <input class="booking-item" type="text" placeholder="Город">
-          <input class="booking-item" type="text" placeholder="Категория номера">
-          <input class="booking-item" type="date" placeholder="Дата заселения">
-          <input class="booking-item" type="number" placeholder="Количество ночей">
-          <input class="booking-item" type="number" placeholder="Количество гостей">
-          <input class="booking-item-btn" type="button" value="Найти номер">
+        <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete>
+          <input required name="city" class="booking-item" type="text" placeholder="Город">
+          <input required name="room" class="booking-item" type="text" placeholder="Категория номера">
+          <input required name="date" class="booking-item" type="text" placeholder="Дата заселения">
+          <input required name="nights" class="booking-item" type="number" placeholder="Количество ночей">
+          <input required name="people" class="booking-item" type="number" placeholder="Количество гостей">
+          <input required class="booking-item-btn" type="submit" value="Найти номер">
           <span class="offer-list"><a href="#" class="offer-link">9 756</a> предложений доступно</span>
-        </div>
+        </form>
       </section> <!--/section-booking-->
 
       <!--special-->
@@ -85,7 +85,7 @@
           </h3>
           <p class="special-price">
             от 5 000 р
-            <a href="#" class="special-more">Подробнее<div class="arrow"></div></a>
+            <a href="#" class="special-more">Подробнее<span class="arrow"></span></a>
           </p>
         </div>
       </article> <!--/special-->
@@ -105,7 +105,7 @@
           <article class="services-img">
             <img src="img/services/champagne.jpeg" alt="champagne" class="services-pictire">
             <a href="#" class="services-item-link">
-              <h4 class="services-item-title">Эксклюзивное обслуживание</h4>
+              <h4 class="services-item-title">Эксклюзивное обслуживание<span class="arrow"></span></h4>
             </a>
             <p class="services-item-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
           </article>
@@ -114,7 +114,7 @@
           <article class="services-img">
             <img src="img/services/restaurant.jpeg" alt="restaurant" class="services-pictire">
             <a href="#" class="services-item-link">
-              <h4 class="services-item-title">Аренда банкетных залов</h4>
+              <h4 class="services-item-title">Аренда банкетных залов<span class="arrow"></span></h4>
             </a>
             <p class="services-item-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
           </article>
@@ -123,7 +123,7 @@
           <article class="services-img">
             <img src="img/services/pool.jpeg" alt="pool" class="services-pictire">
             <a href="#" class="services-item-link">
-              <h4 class="services-item-title">Сауны, бассейны, бани, фитнес-залы</h4>
+              <h4 class="services-item-title">Сауны, бассейны, бани, фитнес-залы<span class="arrow"></span></h4>
             </a>
             <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
           </article>
@@ -132,7 +132,7 @@
           <article class="services-img">
             <img src="img/services/cars.jpeg" alt="cars" class="services-pictire">
             <a href="#" class="services-item-link">
-              <h4 class="services-item-title">Охраняемые автомобильные стоянки</h4>
+              <h4 class="services-item-title">Охраняемые автомобильные стоянки<span class="arrow"></span></h4>
             </a>
             <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
           </article>
@@ -388,17 +388,50 @@
             <div class="accommodation-img">
               <img src="img/accommodation/9.jpeg" alt="hotels_all" class="accommodation-picture">
             </div>
-            <a class="accommodation-link" href="#">Посмотреть все варианты</a>
+            <a class="accommodation-link" href="#">Посмотреть все варианты<span class="arrow-big"></span></a>
         </article>
         </li> <!--/accommodation-list-item-->
       </ul> <!--/accommodation-list-->
     </section> <!--/section-accommodation-->
 
-    <!--section-contacts-->
-    <section class="section-contacts"></section> <!--/section-contacts-->
+    <!--hero-->
+    <div class="hero">
+      <!--section-contacts-->
+    <section class="section-contacts">
+      <h2 class="section-title">Контакт</h2>
+      <div class="contacts-main">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <h3 class="contacts-item-title">Адрес</h3>
+            <p class="contacts-item-text">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+          </li>
+          <li class="contacts-item">
+            <h3 class="contacts-item-title">Телефоны</h3>
+            <p class="contacts-item-text">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+          </li>
+          <li class="contacts-item">
+            <h3 class="contacts-item-title">E-mail</h3>
+            <p class="contacts-item-text">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+          </li>
+          <li class="contacts-item">
+            <h3 class="contacts-item-title">График</h3>
+            <p class="contacts-item-text">Понедельник - пятница, с 10:00 до 19:00</p>
+          </li>
+        </ul>
+      </div>
+    </section> <!--/section-contacts-->
 
     <!--section-writeus-->
-    <section class="section-writeus"></section> <!--/section-writeus-->
+    <section class="section-writeus">
+      <h2 class="section-title">Напишите нам</h2>
+        <form class="writeus-form" action="https://postman-echo.com/post" method="POST" autocomplete>
+          <input required name="name" class="writeus-item" type="text" placeholder="Имя">
+          <input required name="phone" class="writeus-item" type="tel" placeholder="+7">
+          <input required name="date" class="writeus-item" type="text" placeholder="Дата заселения">
+          <input required class="writeus-item-btn" type="submit">
+        </form>
+    </section> <!--/section-writeus-->
+    </div> <!--/hero-->
   </main> <!--/main-->
   <footer class="footer"></footer> <!--/footer-->
   </div> <!--/container-->

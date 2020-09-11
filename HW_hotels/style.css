@@ -179,11 +179,24 @@ button {
 }
 
 .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
   width: 10px;
   height: 10px;
   border-top: 2px solid #cc9933;
   border-right: 2px solid #cc9933;
-  margin-right: 60px;
+  transform: rotate(45deg);
+}
+
+.arrow-big {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(45deg);
 }
 
@@ -446,4 +459,44 @@ button {
   font-size: 22px;
   line-height: 0.6875;
   color: #fff;
+}
+
+
+/* Write us
+===================*/
+.section-writeus {
+  max-width: 340px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.writeus-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.writeus-item {
+  min-height: 70px;
+
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.writeus-item::placeholder {
+  color: #999;
+}
+
+.writeus-item-btn {
+  padding: 30px;
+
+  font-weight: 700;
+  border-radius: 12px;
+  border-color: transparent;
+  color: #fff;
+  background: #cc9933;
+  cursor: pointer;
 }
