@@ -7,3 +7,4 @@ HTML/CSS
 4. Work with layout
 5. Layout. HTML
 6. Layout. Flexbox
+7. Layout. Style
