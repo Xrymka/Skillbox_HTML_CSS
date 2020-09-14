@@ -464,16 +464,52 @@ button {
 
 /* Contacts
 ===================*/
-.contacts-main {
+.contacts-table {
   padding: 45px;
+  max-width: 465px;
+
+  border-collapse: 20px;
 
   border-radius: 12px;
   background-color: #fff;
+  text-align: left;
 }
 
-.contacts-item {
-  display: flex;
-  justify-content: space-between;
+tr, th {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.contacts-title {
+  vertical-align: text-top;
+
+  font-size: 22px;
+  color: #666;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.contacts-text {
+  padding-left: 40px;
+
+  color: #666;
+  font-weight: 400;
+}
+
+.contacts-link {
+  font-size: 16px;
+  color: #cc9933;
+  font-weight: 400;
+}
+
+.contacts-btn {
+  padding: 30px;
+
+  color: #cc9933;
+  background-color: transparent;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  font-weight: 700;
 }
 
 /* Write us
