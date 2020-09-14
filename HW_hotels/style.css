@@ -462,13 +462,33 @@ button {
 }
 
 
+/* Contacts
+===================*/
+.contacts-main {
+  padding: 45px;
+
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.contacts-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Write us
 ===================*/
 .section-writeus {
   max-width: 340px;
+  margin-top: 200px;
+  margin-left: 180px;
 
   text-align: center;
   align-items: center;
+}
+
+.writeus-title {
+  margin: 0 0 20px;
 }
 
 .writeus-form {
@@ -477,13 +497,20 @@ button {
 }
 
 .writeus-item {
+  min-width: 340px;
   min-height: 70px;
 
   margin-bottom: 20px;
   padding-left: 20px;
+  line-height: 1;
 
   border-radius: 12px;
   border-color: transparent;
+}
+
+.writeus-item-message {
+  padding-top: 15px;
+  resize: none;
 }
 
 .writeus-item::placeholder {
@@ -491,7 +518,7 @@ button {
 }
 
 .writeus-item-btn {
-  padding: 30px;
+  padding: 25px;
 
   font-weight: 700;
   border-radius: 12px;

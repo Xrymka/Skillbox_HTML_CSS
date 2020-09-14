@@ -64,7 +64,6 @@
       <!--section-booking-->
       <section class="section-booking">
         <h2 class="section-title">Быстрая бронь</h2>
-<<<<<<< HEAD
         <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete>
           <input required name="city" class="booking-item" type="text" placeholder="Город">
           <input required name="room" class="booking-item" type="text" placeholder="Категория номера">
@@ -72,15 +71,6 @@
           <input required name="nights" class="booking-item" type="number" placeholder="Количество ночей">
           <input required name="people" class="booking-item" type="number" placeholder="Количество гостей">
           <input required class="booking-item-btn" type="submit" value="Найти номер">
-=======
-        <div class="booking-form">
-          <input class="booking-item" type="text" placeholder="Город">
-          <input class="booking-item" type="text" placeholder="Категория номера">
-          <input class="booking-item" type="text" placeholder="Дата заселения">
-          <input class="booking-item" type="number" placeholder="Количество ночей">
-          <input class="booking-item" type="number" placeholder="Количество гостей">
-          <input class="booking-item-btn" type="button" value="Найти номер">
->>>>>>> ad5e1bb2e9ca7d68c81704d7a0a1ed877a09f3f1
           <span class="offer-list"><a href="#" class="offer-link">9 756</a> предложений доступно</span>
         </form>
       </section> <!--/section-booking-->
@@ -417,7 +407,7 @@
           </li>
           <li class="contacts-item">
             <h3 class="contacts-item-title">Телефоны</h3>
-            <p class="contacts-item-text">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+            <p class="contacts-item-text"><a href="tel:+74995356434">+7 (499) 535-64-34</a> <a href="tel:+74950050544">+7 (495) 005-05-44</a></p>
           </li>
           <li class="contacts-item">
             <h3 class="contacts-item-title">E-mail</h3>
@@ -428,16 +418,17 @@
             <p class="contacts-item-text">Понедельник - пятница, с 10:00 до 19:00</p>
           </li>
         </ul>
+        <button type="button" class="contacts-btn">Построить маршрут</button>
       </div>
     </section> <!--/section-contacts-->
 
     <!--section-writeus-->
     <section class="section-writeus">
-      <h2 class="section-title">Напишите нам</h2>
+      <h2 class="section-title writeus-title">Напишите нам</h2>
         <form class="writeus-form" action="https://postman-echo.com/post" method="POST" autocomplete>
           <input required name="name" class="writeus-item" type="text" placeholder="Имя">
           <input required name="phone" class="writeus-item" type="tel" placeholder="+7">
-          <input required name="date" class="writeus-item" type="text" placeholder="Дата заселения">
+          <textarea required name="message" class="writeus-item writeus-item-message" rows="6" placeholder="Сообщение..."></textarea>
           <input required class="writeus-item-btn" type="submit">
         </form>
     </section> <!--/section-writeus-->
@@ -448,3 +439,4 @@
 </body>
 
 </html>
+
