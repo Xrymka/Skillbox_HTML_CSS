@@ -74,6 +74,11 @@ button {
   cursor: pointer;
 }
 
+label {
+  visibility: hidden;
+  font-size: 0;
+}
+
 /* Container
 ===================*/
 .container {
@@ -178,6 +183,14 @@ button {
   font-weight: 400;
 }
 
+/* Text left
+===================*/
+.text-left {
+  text-align: left;
+}
+
+/* Arrow
+===================*/
 .arrow {
   display: inline-block;
   vertical-align: middle;
@@ -464,23 +477,22 @@ button {
 
 /* Contacts
 ===================*/
+/*
 .contacts-table {
-  padding: 45px;
   max-width: 465px;
 
-  border-collapse: 20px;
+  border-collapse: collapse;
+  border-spacing: 20px;
+
 
   border-radius: 12px;
   background-color: #fff;
   text-align: left;
 }
 
-tr, th {
-  padding: 10px;
-  border-bottom: 1px solid #666;
-}
-
 .contacts-title {
+  padding-left: 45px;
+  padding-top: 30px;
   vertical-align: text-top;
 
   font-size: 22px;
@@ -502,9 +514,108 @@ tr, th {
   font-weight: 400;
 }
 
+.address-style {
+  font-style: normal;
+  color: #333;
+  font-weight: 400;
+}
+
+.contacts-top {
+  padding-top: 30px;
+}
+
+.contacts-bottom {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts-color {
+  color: #333;
+}
+
+.contacts-button {
+  padding-top: 45px;
+  padding-left: 45px;
+}
+
 .contacts-btn {
   padding: 30px;
 
+  color: #cc9933;
+  background-color: transparent;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  font-weight: 700;
+} */
+
+/* Contacts
+===================*/
+.contacts-list {
+  max-width: 465px;
+  padding: 30px 45px 45px 40px;
+
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.contacts-item {
+  padding-top: 25px;
+  padding-bottom: 30px;
+
+  line-height: 24px;
+}
+
+.contacts-item:last-child {
+  padding-top: 45px;
+  padding-bottom: 0px;
+}
+
+.contacts-item:not(:last-child) {
+  display: flex;
+  align-items: start;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts-item-title {
+  min-width: 28%;
+
+  font-size: 22px;
+  color: #666;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.contacts-text,
+.contacts-info {
+  padding-left: 40px;
+  font-style: normal;
+}
+
+.contacts-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-info {
+  color: #666;
+}
+
+.contacts-mode {
+  padding-right: 40px;
+}
+
+.contacts-link {
+  font-size: 16px;
+  color: #cc9933;
+  font-weight: 400;
+}
+
+.contacts-btn {
+  padding: 30px;
+
+  line-height: 24px;
   color: #cc9933;
   background-color: transparent;
   border: 1px solid #cc9933;
@@ -516,7 +627,7 @@ tr, th {
 ===================*/
 .section-writeus {
   max-width: 340px;
-  margin-top: 200px;
+  margin-top: 240px;
   margin-left: 180px;
 
   text-align: center;
@@ -536,7 +647,7 @@ tr, th {
   min-width: 340px;
   min-height: 70px;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-left: 20px;
   line-height: 1;
 
@@ -557,9 +668,121 @@ tr, th {
   padding: 25px;
 
   font-weight: 700;
+  line-height: 24px;
   border-radius: 12px;
   border-color: transparent;
   color: #fff;
   background: #cc9933;
   cursor: pointer;
+}
+
+/* Footer
+===================*/
+.footer {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding: 50px 45px 50px;
+
+  background: url('img/sun_footer.png') bottom right 170px no-repeat #333;
+  border-radius: 12px;
+}
+
+.footer-left {
+  max-width: 300px;
+  margin-right: 120px;
+}
+
+.footer-center {
+  flex-grow: 1;
+}
+
+.footer-tel,
+.footer-mail {
+  max-width: 170px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-tel {
+  margin-bottom: 30px;
+}
+
+.footer-info {
+  margin-bottom: 45px;
+
+  color: #fff;
+}
+
+.footer-address {
+  margin-bottom: 30px;
+
+  font-style: normal;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #cc9933;
+  font-weight: 400;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.footer-trip {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('img/social/tripadvisor.png') no-repeat;
+  background-size: 100%;
+
+  opacity: 0.5;
+}
+
+.footer-twitter {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('img/social/twitter.png') no-repeat;
+  background-size: 100%;
+
+  opacity: 0.5;
+}
+
+.footer-facebook {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('img/social/facebook.png') no-repeat;
+  background-size: 100%;
+
+  opacity: 0.5;
+}
+
+.footer-vk {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('img/social/vk.png') no-repeat;
+  background-size: 100%;
+
+  opacity: 0.5;
+}
+
+.footer-google {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('img/social/google-plus.png') no-repeat;
+  background-size: 100%;
+
+  opacity: 0.5;
 }

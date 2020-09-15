@@ -65,12 +65,12 @@
       <section class="section-booking">
         <h2 class="section-title">Быстрая бронь</h2>
         <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete>
-          <input required name="city" class="booking-item" type="text" placeholder="Город">
-          <input required name="room" class="booking-item" type="text" placeholder="Категория номера">
-          <input required name="date" class="booking-item" type="text" placeholder="Дата заселения">
-          <input required name="nights" class="booking-item" type="number" placeholder="Количество ночей">
-          <input required name="people" class="booking-item" type="number" placeholder="Количество гостей">
-          <input required class="booking-item-btn" type="submit" value="Найти номер">
+          <input required name="city" id="city" class="booking-item" type="text" placeholder="Город"><label for="city">Город</label>
+          <input required name="room" id="room" class="booking-item" type="text" placeholder="Категория номера"><label for="room">Категория номера</label>
+          <input required name="date" id="date" class="booking-item" type="text" placeholder="Дата заселения"><label for="date">Дата заселения</label>
+          <input required name="nights" id="nights" class="booking-item" type="number" placeholder="Количество ночей"><label for="nights">Количество ночей</label>
+          <input required name="people" id="people" class="booking-item" type="number" placeholder="Количество гостей"><label for="people">Количество гостей</label>
+          <input class="booking-item-btn" id="find" type="submit" value="Найти номер"><label for="find">Найти номер</label>
           <span class="offer-list"><a href="#" class="offer-link">9 756</a> предложений доступно</span>
         </form>
       </section> <!--/section-booking-->
@@ -397,53 +397,126 @@
     <!--hero-->
     <div class="hero">
       <!--section-contacts-->
+      <!--
     <section class="section-contacts">
-      <h2 class="section-title">Контакт</h2>
       <table class="contacts-table">
+        <caption class="section-title text-left">Контакты</caption>
         <tr>
-          <td class="contacts-title">Адрес</td>
-          <td class="contacts-text">Москва, улица Юности, дом 5 строение 4, офис 2</td>
+          <td class="contacts-title contacts-bottom">Адрес</td>
+          <td class="contacts-text contacts-top contacts-bottom"><address class="address-style">Москва, улица Юности, дом 5 строение 4, офис 2</address></td>
         </tr>
         <tr>
-          <td class="contacts-title" rowspan="2">Телефоны</td>
-          <td class="contacts-text"><a class="contacts-link" href="tel:+74995356434">+7 (499) 535-64-34</a></td>
+          <td class="contacts-title contacts-bottom" rowspan="2">Телефоны</td>
+          <td class="contacts-text contacts-top"><a class="contacts-link" href="tel:+74995356434">+7 (499) 535-64-34</a></td>
         </tr>
         <tr>
-          <td class="contacts-text"><a class="contacts-link" href="tel:+74950050544">+7 (495) 005-05-44</a></td>
+          <td class="contacts-text contacts-bottom"><a class="contacts-link" href="tel:+74950050544">+7 (495) 005-05-44</a></td>
         </tr>
         <tr>
-          <td class="contacts-title" rowspan="2">E-mail</td>
-          <td class="contacts-text"><a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a> по вопросам бронирования</td>
+          <td class="contacts-title contacts-bottom" rowspan="2">E-mail</td>
+          <td class="contacts-text contacts-top"><a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a> по вопросам бронирования</td>
         </tr>
         <tr>
-          <td class="contacts-text"><a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a> по вопросам сотдничества</td>
+          <td class="contacts-text contacts-bottom"><a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a> по вопросам сотдничества</td>
         </tr>
         <tr>
-          <td class="contacts-title" rowspan="2">График</td>
-          <td class="contacts-text">Понедельник - пятница,</td>
+          <td class="contacts-title contacts-bottom" rowspan="2">График</td>
+          <td class="contacts-text contacts-top contacts-color">Понедельник - пятница,</td>
         </tr>
         <tr>
-          <td class="contacts-text">с 10:00 до 19:00</td>
+          <td class="contacts-text contacts-bottom contacts-color">с 10:00 до 19:00</td>
         </tr>
         <tr>
-          <td colspan="2"><button class="contacts-btn">Построить маршрут</button></td>
+          <td colspan="2" class="contacts-button"><button class="contacts-btn">Построить маршрут</button></td>
         </tr>
       </table>
+    </section> --> <!--/section-contacts-->
+
+    <!--section-contacts-->
+    <section class="section-contacts">
+      <h2 class="section-title">Контакты</h2>
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <h3 class="contacts-item-title">Адрес</h3>
+          <address class="contacts-text">Москва, улица Юности, дом 5 строение 4, офис 2</address>
+        </li>
+        <li class="contacts-item">
+          <h3 class="contacts-item-title">Телефон</h3>
+          <div class="contacts-text">
+            <a class="contacts-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+            <a class="contacts-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+          </div>
+        </li>
+        <li class="contacts-item">
+          <h3 class="contacts-item-title">E-mail</h3>
+          <p class="contacts-info">
+            <a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a> по вопросам бронирования
+            <a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a> по вопросам сотдничества
+          </p>
+        </li>
+        <li class="contacts-item">
+          <h3 class="contacts-item-title">График</h3>
+          <p class="contacts-text contacts-mode">Понедельник - пятница, с 10:00 до 19:00</p>
+        </li>
+        <li class="contacts-item">
+          <button class="contacts-btn">Построить маршрут</button>
+        </li>
+      </ul>
     </section> <!--/section-contacts-->
+
 
     <!--section-writeus-->
     <section class="section-writeus">
       <h2 class="section-title writeus-title">Напишите нам</h2>
         <form class="writeus-form" action="https://postman-echo.com/post" method="POST" autocomplete>
-          <input required name="name" class="writeus-item" type="text" placeholder="Имя">
-          <input required name="phone" class="writeus-item" type="tel" placeholder="+7">
-          <textarea required name="message" class="writeus-item writeus-item-message" rows="6" placeholder="Сообщение..."></textarea>
-          <input required class="writeus-item-btn" type="submit">
+          <input required name="name" id="name" class="writeus-item" type="text" placeholder="Имя"><label for="name">Имя</label>
+          <input required name="phone" id="phone" class="writeus-item" type="tel" placeholder="+7"><label for="phone">Телефон</label>
+          <textarea required name="message" id="message" class="writeus-item writeus-item-message" rows="6" placeholder="Сообщение..."></textarea><label for="message">Сообщение</label>
+          <input id="send" class="writeus-item-btn" type="submit"><label for="send">Отправить</label>
         </form>
     </section> <!--/section-writeus-->
     </div> <!--/hero-->
   </main> <!--/main-->
-  <footer class="footer"></footer> <!--/footer-->
+
+
+  <footer class="footer">
+    <div class="footer-left">
+      <p class="footer-info">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
+      <p class="footer-info">Представленная на сайте информация
+        носит справочный характер и не является публичной офертой</p>
+      <a href="#" class="footer-link">Политика конфиденциальности</a>
+    </div>
+    <div class="footer-center">
+      <address class="footer-info footer-address">11710, улица Юности, дом 5 строение 4, офис 2</address>
+      <div class="footer-tel">
+        <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+        <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+      </div>
+      <div class="footer-mail">
+        <a href="mailto:lg.oona@mail.ru" class="footer-link">lg.oona@mail.ru</a>
+        <a href="mailto:hotels.ln@mail.ru" class="footer-link">hotels.ln@mail.ru</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="#" class="footer-trip" target="_blank"></a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-twitter" target="_blank"></a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-facebook" target="_blank"></a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-vk" target="_blank"></a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-google" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+  </footer> <!--/footer-->
   </div> <!--/container-->
 </body>
 
