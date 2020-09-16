@@ -137,6 +137,7 @@ label {
 }
 
 .header-bottom {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -167,11 +168,22 @@ label {
 
   border-radius: 15px;
   border-color: transparent;
-  background: url('img/search.png') right 20px center no-repeat #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .header-search::placeholder {
   color: #bebebe;
+}
+
+.header-btn {
+  position: absolute;
+  top: 23px;
+  right: 45px;
+  height: 23px;
+  width: 22px;
+
+  background: url('img/search.png') no-repeat;
+  border: none;
 }
 
 /* Section-title
@@ -474,89 +486,16 @@ label {
   color: #fff;
 }
 
-
 /* Contacts
 ===================*/
-/*
-.contacts-table {
-  max-width: 465px;
-
-  border-collapse: collapse;
-  border-spacing: 20px;
-
-
-  border-radius: 12px;
-  background-color: #fff;
-  text-align: left;
-}
-
-.contacts-title {
-  padding-left: 45px;
-  padding-top: 30px;
-  vertical-align: text-top;
-
-  font-size: 22px;
-  color: #666;
-  font-weight: 700;
-  line-height: 32px;
-}
-
-.contacts-text {
-  padding-left: 40px;
-
-  color: #666;
-  font-weight: 400;
-}
-
-.contacts-link {
-  font-size: 16px;
-  color: #cc9933;
-  font-weight: 400;
-}
-
-.address-style {
-  font-style: normal;
-  color: #333;
-  font-weight: 400;
-}
-
-.contacts-top {
-  padding-top: 30px;
-}
-
-.contacts-bottom {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
-}
-
-.contacts-color {
-  color: #333;
-}
-
-.contacts-button {
-  padding-top: 45px;
-  padding-left: 45px;
-}
-
-.contacts-btn {
-  padding: 30px;
-
-  color: #cc9933;
-  background-color: transparent;
-  border: 1px solid #cc9933;
-  border-radius: 12px;
-  font-weight: 700;
-} */
-
-/* Contacts
-===================*/
-.contacts-list {
+.card {
   max-width: 465px;
   padding: 30px 45px 45px 40px;
 
   border-radius: 12px;
   background-color: #fff;
   text-align: left;
+  font-style: normal;
 }
 
 .contacts-item {
@@ -566,12 +505,7 @@ label {
   line-height: 24px;
 }
 
-.contacts-item:last-child {
-  padding-top: 45px;
-  padding-bottom: 0px;
-}
-
-.contacts-item:not(:last-child) {
+.contacts-item {
   display: flex;
   align-items: start;
 
@@ -590,7 +524,6 @@ label {
 .contacts-text,
 .contacts-info {
   padding-left: 40px;
-  font-style: normal;
 }
 
 .contacts-text {
@@ -610,6 +543,10 @@ label {
   font-size: 16px;
   color: #cc9933;
   font-weight: 400;
+}
+
+.contacts-button {
+  margin-top: 45px;
 }
 
 .contacts-btn {
@@ -695,6 +632,8 @@ label {
 
 .footer-center {
   flex-grow: 1;
+
+  font-style: normal;
 }
 
 .footer-tel,
@@ -726,6 +665,10 @@ label {
   line-height: 24px;
   color: #cc9933;
   font-weight: 400;
+}
+
+.footer-right {
+  font-style: normal;
 }
 
 .footer-list {
