@@ -1,18 +1,4 @@
-@font-face {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 300;
-  src: url('fonts/MullerLight.woff2') format('woff2'),
-  url('fonts/MullerLight.woff') format('woff');
-}
 
-@font-face {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/MullerRegular.woff2') format('woff2'),
-  url('fonts/MullerRegular.woff') format('woff');
-}
 
 @font-face {
   font-family: 'Muller';
@@ -22,13 +8,6 @@
   url('fonts/MullerMedium.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/MullerBold.woff2') format('woff2'),
-  url('fonts/MullerBold.woff') format('woff');
-}
 
 :root {
   --gainsborough: #f1f1f1;
@@ -581,6 +560,18 @@ label {
   color: var(--white);
 }
 
+.accommodation-room:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.accommodation-room:active {
+  background-color: var(--dark-orange);
+  color: var(--white);
+}
+
 .accommodation-link {
   font-size: 22px;
   line-height: 0.6875;
@@ -669,6 +660,7 @@ label {
   color: var(--dark-orange);
 }
 
+
 .contacts-button {
   margin-top: 45px;
 }
@@ -688,6 +680,18 @@ label {
 
 .contacts-btn:hover {
   background-color: var(--orange);
+  color: var(--white);
+}
+
+.contacts-btn:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.contacts-btn:active {
+  background-color: var(--dark-orange);
   color: var(--white);
 }
 
@@ -879,4 +883,19 @@ label {
 
 .footer-icon:hover {
   opacity: 1;
+}
+
+.footer-icon:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  background-color: rgba(190, 117, 7, 0.5);
+  border-radius: 12px;
+}
+
+.footer-icon:active {
+  background-color: var(--dark-orange);
+  border-radius: 12px;
+  opacity: 2;
+}
 }
