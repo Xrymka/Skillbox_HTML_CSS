@@ -1,4 +1,18 @@
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/MullerLight.woff2') format('woff2'),
+  url('fonts/MullerLight.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MullerRegular.woff2') format('woff2'),
+  url('fonts/MullerRegular.woff') format('woff');
+}
 
 @font-face {
   font-family: 'Muller';
@@ -8,6 +22,13 @@
   url('fonts/MullerMedium.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/MullerBold.woff2') format('woff2'),
+  url('fonts/MullerBold.woff') format('woff');
+}
 
 :root {
   --gainsborough: #f1f1f1;
@@ -69,6 +90,19 @@ label {
   font-size: 0;
 }
 
+input:hover, textarea:hover {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border-radius: 12px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid var(--dark-orange);
+  border-radius: 12px;
+      background-color: rgba(190, 117, 7, 0.2);
+}
+
 /* Container
 ===================*/
 .container {
@@ -94,16 +128,28 @@ label {
   align-items: center;
 }
 
-.logo-lagoona {
+.logo-link {
+  display: block;
+  
+  line-height: 0.5;
+
   transition: transform 2ms ease-in-out;
 }
 
-.logo-lagoona:hover {
+.logo-link:hover {
   transform: scale(1.1);
 }
 
-.header-title {
-  max-height: 54px;
+.logo-link:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.logo-link:active {
+  box-shadow: 10px 10px 20px rgba(190, 117, 7, 1);
+  border-radius: 12px;
 }
 
 .header-number {
@@ -120,6 +166,18 @@ label {
   color: var(--dark-gray);
 }
 
+.header-number:focus {
+  padding: 5px;
+
+  outline-color: var(--light-gray);
+}   
+
+.header-number:active {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--light-gray);
+}   
+
 .header-account {
   border: none;
   background: transparent;
@@ -134,6 +192,17 @@ label {
 
 .header-account:hover {
   color: var(--dark-orange);
+}
+
+.header-account:focus {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-account:active {
+  
 }
 
 .header-account-arrow {
@@ -178,6 +247,16 @@ label {
   font-weight: 700;
 }
 
+.nav-link:focus {
+  outline: none;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+.nav-link:active {
+  border-bottom: 2px solid var(--dark-gray);
+}
+
 .header-search {
   min-width: 355px;
   min-height: 48px;
@@ -201,7 +280,7 @@ label {
   height: 23px;
   width: 22px;
 
-  background: url('img/search.png') no-repeat;
+  background: url('img/search.png') center no-repeat;
   border: none;
 
   transition: transform 1ms ease-in-out;
@@ -209,6 +288,25 @@ label {
 
 .header-btn:hover {
   transform: rotate(90deg);
+}
+
+.header-btn:focus {
+  padding: 18px;
+  top: 18px;
+
+  outline: none;
+  box-shadow: 0 0 10px;
+  border-radius: 12px;
+}
+
+.header-btn:active {
+  padding: 18px;
+  top: 18px;
+
+  outline: none;
+  box-shadow: 0 0 10px;
+  border-radius: 12px;
+  background-color: var(--gray);
 }
 
 
@@ -288,6 +386,7 @@ label {
   padding: 30px;
 
   font-weight: 700;
+  line-height: 1.2;
   border-radius: 12px;
   border-color: transparent;
   color: var(--white);
@@ -297,8 +396,8 @@ label {
   transition: background-color 1ms linear;
 }
 
-.booking-item-btn:hover {
-  background-color: var(--dark-orange);
+.booking-item-btn:focus {
+  color: var(--orange);
 }
 
 .offer-list {
@@ -319,8 +418,25 @@ label {
 }
 
 .offer-link:hover {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--dark-orange);
+}
+
+.offer-link:focus {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.offer-link:active {
+  font-size: 18px;
+  color: var(--dark-orange);
+
+  border-bottom: 1px solid var(--dark-orange);
 }
 
 /* Special
@@ -372,9 +488,22 @@ label {
 }
 
 .special-more:hover {
-  transform: scaleX(1.6);
   transform: scaleY(1.2);
   color: var(--dark-orange);
+}
+
+.special-more:focus {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.special-more:active {
+  border-bottom: 2px solid var(--orange);
 }
 
 /* About
@@ -422,14 +551,30 @@ label {
 
   font-size: 22px;
   font-weight: 500;
+}
+
+.services-item-link {
   color: var(--orange);
 
   transition: color, transform 1.5ms linear;
 }
 
-.services-item-title:hover {
-  transform: scale(1.1);
+.services-item-link:hover {
   color: var(--dark-orange);
+}
+
+.services-item-link:focus {
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.services-item-link:active {
+  border-bottom: 2px solid var(--orange);
 }
 
 .services-item-text {
@@ -585,6 +730,19 @@ label {
   font-weight: 700;
 }
 
+.accommodation-link:focus {
+  padding: 10px;
+  box-shadow: 0 0 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+
+.accommodation-link:active {
+  border-bottom: 1px solid var(--white);
+}
+
 .accommodation-link::after {
   content: "";
   display: block;
@@ -658,6 +816,17 @@ label {
 
 .contacts-link:hover {
   color: var(--dark-orange);
+}
+
+.contacts-link:focus{
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.contacts-link:active {
+  border-bottom: 1px solid var(--orange);
 }
 
 
@@ -750,9 +919,10 @@ label {
   transition: background-color 1ms ease-in-out;
 }
 
-.writeus-item-btn:hover {
-  background-color: var(--dark-orange);
+.writeus-item-btn:focus {
+  color: var(--orange);
 }
+
 
 /* Footer
 ===================*/
@@ -812,6 +982,17 @@ label {
 
 .footer-link:hover {
   color: var(--dark-orange);
+}
+
+.footer-link:focus{
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-link:active {
+  border-bottom: 1px solid var(--orange);
 }
 
 .footer-right {
