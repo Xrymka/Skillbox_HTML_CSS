@@ -1,0 +1,26 @@
+/* Advantages
+===================*/
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages-item {
+    max-width: 275px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+    background-color: var(--white);
+  }
+
+  .advantages-item:not(:nth-child(4n)) {
+    margin-right: 22px;
+  }
+
+  .advantages-card {
+    margin: 10px 45px 40px 45px;
+  }
+
+  .card-title {
+    visibility: hidden;
+  }

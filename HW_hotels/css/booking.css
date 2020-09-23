@@ -1,0 +1,82 @@
+/* Booking
+===================*/
+.section-booking {
+  max-width: 520px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking-item {
+  min-width: 520px;
+  min-height: 70px;
+
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.booking-item::placeholder {
+  color: var(--gray);
+}
+
+.booking-item-btn {
+  padding: 30px;
+
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 12px;
+  border-color: transparent;
+  color: var(--white);
+  background: var(--orange);
+  cursor: pointer;
+
+  transition: background-color 1ms linear;
+}
+
+.booking-item-btn:focus {
+  color: var(--orange);
+}
+
+.offer-list {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+  color: var(--gray);
+}
+
+.offer-link {
+  margin-right: 5px;
+
+  font-weight: 500;
+  color: var(--orange);
+
+  transition: font-size, color 1ms ease-in-out;
+}
+
+.offer-link:hover {
+  font-size: 18px;
+  color: var(--dark-orange);
+}
+
+.offer-link:focus {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.offer-link:active {
+  font-size: 18px;
+  color: var(--dark-orange);
+
+  border-bottom: 1px solid var(--dark-orange);
+}

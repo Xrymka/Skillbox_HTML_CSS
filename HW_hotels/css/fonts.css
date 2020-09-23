@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Muller';  /* Название шрифта, которое будет использовано в последствие*/
+  font-style: normal; /* Начертание шрифта */
+  font-weight: 300; /* Жирность шрифта */
+  src: local('MullerLight'),
+  url('../fonts/MullerLight.woff2') format('woff2'), /* Путь до шрифта, в начале пишется приоритетный шрифт */
+  url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap; /* Настройка для мгновенной отрисовки запасного шрифта браузером */
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MullerRegular'),
+  url('../fonts/MullerRegular.woff2') format('woff2'),
+  url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: local('MullerMedium'),
+  url('../fonts/MullerMedium.woff2') format('woff2'),
+  url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: local('MullerBold'),
+  url('../fonts/MullerBold.woff2') format('woff2'),
+  url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+}

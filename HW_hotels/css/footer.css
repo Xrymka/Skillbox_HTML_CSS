@@ -1,0 +1,155 @@
+/* Footer
+===================*/
+.footer {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 50px 45px 50px;
+
+    background: url('../img/sun_footer.png') bottom right 170px no-repeat var(--dark-gray);
+    border-radius: 12px;
+  }
+
+  .footer-left {
+    max-width: 300px;
+    margin-right: 120px;
+  }
+
+  .footer-center {
+    flex-grow: 1;
+
+    font-style: normal;
+  }
+
+  .footer-tel,
+  .footer-mail {
+    max-width: 170px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-tel {
+    margin-bottom: 30px;
+  }
+
+  .footer-info {
+    margin-bottom: 45px;
+
+    color: var(--white);
+  }
+
+  .footer-address {
+    margin-bottom: 30px;
+
+    font-style: normal;
+  }
+
+  .footer-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--orange);
+    font-weight: 400;
+
+    transition: color 1ms linear;
+  }
+
+  .footer-link:hover {
+    color: var(--dark-orange);
+  }
+
+  .footer-link:focus{
+    box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .footer-link:active {
+    border-bottom: 1px solid var(--orange);
+  }
+
+  .footer-right {
+    font-style: normal;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .footer-trip {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/social/tripadvisor.png') no-repeat;
+    background-size: 100%;
+
+    opacity: 0.5;
+  }
+
+  .footer-twitter {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/social/twitter.png') no-repeat;
+    background-size: 100%;
+
+    opacity: 0.5;
+  }
+
+  .footer-facebook {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/social/facebook.png') no-repeat;
+    background-size: 100%;
+
+    opacity: 0.5;
+  }
+
+  .footer-vk {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/social/vk.png') no-repeat;
+    background-size: 100%;
+
+    opacity: 0.5;
+  }
+
+  .footer-google {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../img/social/google-plus.png') no-repeat;
+    background-size: 100%;
+
+    opacity: 0.5;
+  }
+
+  .footer-icon {
+    transition: opacity 2ms ease-in-out;
+  }
+
+  .footer-icon:hover {
+    opacity: 1;
+  }
+
+  .footer-icon:focus {
+    box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+    outline: none;
+    border: none;
+    background-color: rgba(190, 117, 7, 0.5);
+    border-radius: 12px;
+  }
+
+  .footer-icon:active {
+    background-color: var(--dark-orange);
+    border-radius: 12px;
+    opacity: 2;
+  }

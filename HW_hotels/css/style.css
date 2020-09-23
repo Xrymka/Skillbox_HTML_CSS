@@ -1,0 +1,73 @@
+:root {
+  --gainsborough: #f1f1f1;
+  --white: #fff;
+  --orange: #cc9933;
+  --light-gray: #666;
+  --gray: #999;
+  --dark-gray: #333;
+  --dark-orange: #a06d08; /* Задаются переменные */
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; /* Свойства width и height включает в себя padding, но не margin */
+}
+
+body {
+  min-width: 320px;
+  margin: 0; /* Задаются стили для всей страницы */
+
+  font-family: 'Muller', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--dark-gray);
+  background-color: var(--gainsborough);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Сбрасываются margin'ы по умолчанию */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; /* Сбрасываются стили по умолчанию, цвет наследуется у родителя */
+}
+
+p {
+  margin: 0; /* Сбрасываются стили по умолчанию */
+}
+
+img {
+  max-width: 100%; /* Размер изображения не должен превышать размеры блока или контейнера, в котором находится */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; /* Сбрасываются стили по умолчанию */
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  visibility: hidden;  /* Класс для элементов, которые не должны быть видны, но должны быть читаемы ридером */
+  font-size: 0;
+}
+
+input:hover, textarea:hover {
+  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+  outline: none;
+  border-radius: 12px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid var(--dark-orange);
+  border-radius: 12px;
+      background-color: rgba(190, 117, 7, 0.2);
+}

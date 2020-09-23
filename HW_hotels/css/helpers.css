@@ -1,0 +1,64 @@
+/* Container
+===================*/
+.container {
+  max-width: 1198px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 15px; /* Контейнер, в котором расположен основной контент, благодаря margin будет установлен в центре страницы, а благодаря padding не будет прилипать к краям экрана */
+}
+
+/* Section-title
+===================*/
+.section-title {
+  margin: 70px 0 20px 50px;
+
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/* Text left
+===================*/
+.text-left {
+  text-align: left;
+}
+
+/* Arrow
+===================*/
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--orange);
+  border-right: 2px solid var(--orange);
+  transform: rotate(45deg);
+}
+
+
+.arrow-big {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+
+/* Hero
+===================*/
+.hero {
+  display: flex;
+}
+
+/* About
+===================*/
+.about-text {
+  max-width: 881px;
+  margin-left: 50px;
+
+  color: var(--light-gray);
+}

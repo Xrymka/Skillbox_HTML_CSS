@@ -1,0 +1,58 @@
+/* Write us
+===================*/
+.section-writeus {
+    max-width: 340px;
+    margin-top: 240px;
+    margin-left: 180px;
+
+    text-align: center;
+    align-items: center;
+  }
+
+  .writeus-title {
+    margin: 0 0 20px;
+  }
+
+  .writeus-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .writeus-item {
+    min-width: 340px;
+    min-height: 70px;
+
+    margin-bottom: 25px;
+    padding-left: 20px;
+    line-height: 1;
+
+    border-radius: 12px;
+    border-color: transparent;
+  }
+
+  .writeus-item-message {
+    padding-top: 15px;
+    resize: none;
+  }
+
+  .writeus-item::placeholder {
+    color: var(--gray);
+  }
+
+  .writeus-item-btn {
+    padding: 25px;
+
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 12px;
+    border-color: transparent;
+    color: var(--white);
+    background: var(--orange);
+    cursor: pointer;
+
+    transition: background-color 1ms ease-in-out;
+  }
+
+  .writeus-item-btn:focus {
+    color: var(--orange);
+  }

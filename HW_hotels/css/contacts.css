@@ -1,0 +1,110 @@
+/* Contacts
+===================*/
+.card {
+    max-width: 465px;
+    padding: 30px 45px 45px 40px;
+
+    border-radius: 12px;
+    background-color: var(--white);
+    text-align: left;
+    font-style: normal;
+  }
+
+  .contacts-item {
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+  }
+
+  .contacts-item {
+    display: flex;
+    align-items: start;
+
+    border-bottom: 1px solid #ccc;
+  }
+
+  .contacts-item-title {
+    min-width: 28%;
+
+    font-size: 22px;
+    color: var(--light-gray);
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .contacts-text,
+  .contacts-info {
+    padding-left: 40px;
+  }
+
+  .contacts-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts-info {
+    color: var(--light-gray);
+  }
+
+  .contacts-mode {
+    padding-right: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: 400;
+
+    transition: color 1ms linear;
+  }
+
+  .contacts-link:hover {
+    color: var(--dark-orange);
+  }
+
+  .contacts-link:focus{
+    box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .contacts-link:active {
+    border-bottom: 1px solid var(--orange);
+  }
+
+
+  .contacts-button {
+    margin-top: 45px;
+  }
+
+  .contacts-btn {
+    padding: 30px;
+
+    line-height: 24px;
+    color: var(--orange);
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    border-radius: 12px;
+    font-weight: 700;
+
+    transition: background-color, color 1ms ease-in-out;
+  }
+
+  .contacts-btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .contacts-btn:focus {
+    box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .contacts-btn:active {
+    background-color: var(--dark-orange);
+    color: var(--white);
+  }
