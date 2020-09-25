@@ -12,29 +12,6 @@
   align-items: center;
 }
 
-.logo-link {
-  display: block;
-
-  line-height: 0.5;
-
-  transition: transform 2ms ease-in-out;
-}
-
-.logo-link:hover {
-  transform: scale(1.1);
-}
-
-.logo-link:focus {
-  box-shadow: 0 0 20px rgba(190, 117, 7, 0.7);
-  outline: none;
-  border: none;
-  border-radius: 12px;
-}
-
-.logo-link:active {
-  box-shadow: 10px 10px 20px rgba(190, 117, 7, 1);
-  border-radius: 12px;
-}
 
 .header-number {
   margin-left: 25px;
@@ -90,7 +67,7 @@
   width: 15px;
   height: 14px;
 
-  background: url('img/arrow.png') center center no-repeat transparent;
+  background: url('../img/arrow.png') center center no-repeat transparent;
   background-size: contain;
   transform: translateY(2px);
 }
@@ -155,11 +132,11 @@
 .header-btn {
   position: absolute;
   top: 23px;
-  right: 45px;
+  right: 55px;
   height: 23px;
   width: 22px;
 
-  background: url('img/search.png') center no-repeat;
+  background: url('../img/search.png') center no-repeat;
   border: none;
 
   transition: transform 1ms ease-in-out;

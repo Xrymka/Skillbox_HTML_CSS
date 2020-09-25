@@ -1,7 +1,6 @@
 /* Footer
 ===================*/
 .footer {
-    display: flex;
     margin-top: 25px;
     margin-bottom: 50px;
     padding: 50px 45px 50px;
@@ -10,15 +9,14 @@
     border-radius: 12px;
   }
 
-  .footer-left {
-    max-width: 300px;
-    margin-right: 120px;
-  }
-
   .footer-center {
-    flex-grow: 1;
+    padding-left: 75px;
 
     font-style: normal;
+  }
+
+  .footer-right {
+    padding-left: 235px;
   }
 
   .footer-tel,

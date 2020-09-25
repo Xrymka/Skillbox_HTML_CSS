@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"> <!--preload - предзагрузка файла, href - путь к файлу, font - класс загружаемого контента (также можно предзагружать не только текстовые файлы, woff2 - расширение файла, crossorigin указывает должен ли ресурс загружаться с помощью запроса CORS) -->
-  <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"> preload - предзагрузка файла, href - путь к файлу, font - класс загружаемого контента (также можно предзагружать не только текстовые файлы, woff2 - расширение файла, crossorigin указывает должен ли ресурс загружаться с помощью запроса CORS) -->
+  <!-- <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/helpers.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/booking.css">
@@ -26,16 +28,12 @@
 <body>
   <!--container-->
   <div class="container">
-
+    <h1 class="visually-hidden">Lagoona. Сеть отелей</h1>
     <!--header-->
     <header class="header">
       <div class="header-top">
         <div class="header-left">
-          <h1 class="header-title">
-            <a href="#" class="logo-link">
-              <img src="img/Logo.png" alt="logo" class="logo-lagoona">
-            </a>
-          </h1>
+          <img src="img/Logo.png" alt="logo" class="logo-lagoona">
           <a href="tel:+74953225448" class="header-number">+7 (495) 322 54 48</a>
         </div>
         <button class="header-account">
@@ -76,10 +74,9 @@
   <!--main-->
   <main class="main">
 
-    <!--hero-->
-    <div class="hero">
+    <div class="row">
       <!--section-booking-->
-      <section class="section-booking">
+      <section class="section-booking col-lg-6">
         <h2 class="section-title">Быстрая бронь</h2>
         <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete>
           <input required name="city" id="city" class="booking-item" type="text" placeholder="Город"><label for="city">Город</label>
@@ -93,7 +90,7 @@
       </section> <!--/section-booking-->
 
       <!--special-->
-      <article class="special">
+      <article class="special col-lg-6">
         <h2 class="section-title">Спецпредложение</h2>
         <img src="img/special.jpeg" alt="hotel-room" class="special-img">
         <div class="special-info">
@@ -106,7 +103,7 @@
           </p>
         </div>
       </article> <!--/special-->
-    </div> <!--/hero-->
+    </div>
 
     <!--section-about-->
     <section class="section-about">
@@ -117,42 +114,38 @@
     <!--section-services-->
     <section class="section-services">
       <h2 class="section-title">Услуги</h2>
-      <ul class="services-list">
-        <li class="services-item">
-          <article class="services-img">
-            <img src="img/services/champagne.jpeg" alt="champagne" class="services-pictire">
-            <h4 class="services-item-title">
-              <a href="#" class="services-item-link">Эксклюзивное обслуживание<span class="arrow"></span></a>
-            </h4>
-            <p class="services-item-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+      <ul class="services-list row">
+        <li class="col-lg-6">
+          <article class="services-item champagne">
+              <h3 class="services-item-title">
+                <a href="#" class="services-item-link">Эксклюзивное обслуживание<span class="arrow"></span></a>
+              </h3>
+              <p class="services-item-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
           </article>
         </li>
-        <li class="services-item">
-          <article class="services-img">
-            <img src="img/services/restaurant.jpeg" alt="restaurant" class="services-pictire">
-            <h4 class="services-item-title">
-              <a href="#" class="services-item-link">Аренда банкетных залов<span class="arrow"></span></a>
-            </h4>
-            <p class="services-item-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+        <li class="col-lg-6">
+          <article class="services-item restaurant">
+              <h3 class="services-item-title">
+                <a href="#" class="services-item-link">Аренда банкетных залов<span class="arrow"></span></a>
+              </h3>
+              <p class="services-item-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
           </article>
         </li>
-        <li class="services-item">
-          <article class="services-img">
-            <img src="img/services/pool.jpeg" alt="pool" class="services-pictire">
-            <h4 class="services-item-title">
-              <a href="#" class="services-item-link">Сауны, бассейны, бани, фитнес-залы<span class="arrow"></span></a>
-            </h4>
-            <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-          </article>
+        <li class="col-lg-6">
+            <article class="services-item pool">
+              <h3 class="services-item-title">
+                <a href="#" class="services-item-link">Сауны, бассейны, бани, фитнес-залы<span class="arrow"></span></a>
+              </h3>
+              <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </article>
         </li>
-        <li class="services-item">
-          <article class="services-img">
-            <img src="img/services/cars.jpeg" alt="cars" class="services-pictire">
-            <h4 class="services-item-title">
-              <a href="#" class="services-item-link">Охраняемые автомобильные стоянки<span class="arrow"></span></a>
-            </h4>
-            <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-          </article>
+        <li class="col-lg-6">
+            <article class="services-item cars">
+              <h3 class="services-item-title">
+                <a href="#" class="services-item-link">Охраняемые автомобильные стоянки<span class="arrow"></span></a>
+              </h3>
+              <p class="services-item-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+            </article>
         </li>
       </ul>
     </section> <!--/section-services-->
@@ -160,62 +153,54 @@
     <!--section-advantages-->
     <section class="section-advantages">
       <h2 class="section-title">Преимущества</h2>
-      <ul class="advantages-list">
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 1</h4>
-            <img src="img/icons/bath.png" alt="bath" class="advantages-img">
-            <p class="card-text">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
-          </article>
+      <ul class="advantages-list row">
+        <li class="col-lg-3">
+            <article class="advantages-item bath">
+              <h3 class="visually-hidden">Преимущество 1</h3>
+              <p class="advantages-item-text">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 2</h4>
-            <img src="img/icons/hanger.png" alt="hanger" class="advantages-img">
-            <p class="card-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item hanger">
+              <h3 class="visually-hidden">Преимущество 2</h3>
+              <p class="card-text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 3</h4>
-            <img src="img/icons/heating.png" alt="heating" class="advantages-img">
-            <p class="card-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item heating">
+              <h3 class="visually-hidden">Преимущество 3</h3>
+              <p class="card-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 4</h4>
-            <img src="img/icons/key.png" alt="key" class="advantages-img">
-            <p class="card-text">Повседневная практика показывает, что сложившаяся структура организации</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item key">
+              <h3 class="visually-hidden">Преимущество 4</h3>
+              <p class="card-text">Повседневная практика показывает, что сложившаяся структура организации</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 5</h4>
-            <img src="img/icons/parking.png" alt="parking" class="advantages-img">
-            <p class="card-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item parking">
+              <h3 class="visually-hidden">Преимущество 5</h3>
+              <p class="card-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 6</h4>
-            <img src="img/icons/reception.png" alt="reception" class="advantages-img">
-            <p class="card-text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item reception">
+              <h3 class="visually-hidden">Преимущество 6</h3>
+              <p class="card-text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 7</h4>
-            <img src="img/icons/security-box.png" alt="security-box" class="advantages-img">
-            <p class="card-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item security-box">
+              <h3 class="visually-hidden">Преимущество 7</h3>
+              <p class="card-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+            </article>
         </li>
-        <li class="advantages-item">
-          <article class="advantages-card">
-            <h4 class="card-title">Преимущество 8</h4>
-            <img src="img/icons/swimming-pool.png" alt="swimming-pool" class="advantages-img">
-            <p class="card-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
-          </article>
+        <li class="col-lg-3">
+            <article class="advantages-item swimming-pool">
+              <h3 class="visually-hidden">Преимущество 8</h3>
+              <p class="card-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+            </article>
         </li>
       </ul> <!--/advantages-list-->
     </section> <!--/section-advantages-->
@@ -223,9 +208,9 @@
     <!--section-accommodation-->
     <section class="section-accommodation">
       <h2 class="section-title">Размещение</h2>
-      <ul class="accommodation-list">
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+      <ul class="accommodation-list row">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/1.jpeg" alt="hotel_1" class="accommodation-picture">
             </div>
@@ -241,13 +226,13 @@
                 <img src="img/star_empty.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona española</h4>
+            <h3 class="accommodation-name">Lagoona española</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/2.jpeg" alt="hotel_2" class="accommodation-picture">
             </div>
@@ -263,13 +248,13 @@
                 <img src="img/star_empty.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona son típicas</h4>
+            <h3 class="accommodation-name">Lagoona son típicas</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/3.jpeg" alt="hotel_3" class="accommodation-picture">
             </div>
@@ -285,13 +270,13 @@
                 <img src="img/star_full.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona de la guerra</h4>
+            <h3 class="accommodation-name">Lagoona de la guerra</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/4.jpeg" alt="hotel_4" class="accommodation-picture">
             </div>
@@ -307,13 +292,13 @@
                 <img src="img/star_full.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona mentira piadosa</h4>
+            <h3 class="accommodation-name">Lagoona mentira piadosa</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/5.jpeg" alt="hotel_5" class="accommodation-picture">
             </div>
@@ -329,13 +314,13 @@
                 <img src="img/star_empty.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona empujar la creatividad</h4>
+            <h3 class="accommodation-name">Lagoona empujar la creatividad</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/6.jpeg" alt="hotel_6" class="accommodation-picture">
             </div>
@@ -351,13 +336,13 @@
                 <img src="img/star_empty.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona el retorno</h4>
+            <h3 class="accommodation-name">Lagoona el retorno</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/7.jpeg" alt="hotel_7" class="accommodation-picture">
             </div>
@@ -373,13 +358,13 @@
                 <img src="img/star_full.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona enfermo terminó</h4>
+            <h3 class="accommodation-name">Lagoona enfermo terminó</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item">
-          <article class="accommodation-hotel">
+        <li class="col-lg-4">
+          <article class="accommodation-list-item">
             <div class="accommodation-img">
               <img src="img/accommodation/8.jpeg" alt="hotel_8" class="accommodation-picture">
             </div>
@@ -395,22 +380,23 @@
                 <img src="img/star_empty.png" alt="" class="accommodation-full-star">
               </div>
             </div>
-            <h4 class="accommodation-name">Lagoona suerte siguió siempre</h4>
+            <h3 class="accommodation-name">Lagoona suerte siguió siempre</h3>
             <span class="accommodation-place">Барселона, Испания</span>
             <button class="accommodation-room">Номера</button>
           </article>
         </li> <!--/accommodation-list-item-->
-        <li class="accommodation-list-item accommodation-list-item--last">
-            <a class="accommodation-link" href="#">Посмотреть все варианты<span class="arrow-big"></span></a>
+        <li class="col-lg-4">
+            <div class="accommodation-list-item--last">
+              <a class="accommodation-link" href="#">Посмотреть все варианты<span class="arrow-big"></span></a>
+            </div>
         </article>
         </li> <!--/accommodation-list-item-->
       </ul> <!--/accommodation-list-->
     </section> <!--/section-accommodation-->
 
-    <!--hero-->
-    <div class="hero">
+    <div class="row">
     <!--section-contacts-->
-    <section class="section-contacts">
+    <section class="section-contacts col-lg-5">
       <h2 class="section-title">Контакты</h2>
       <address class="card">
         <ul class="contacts-list">
@@ -444,7 +430,7 @@
     </section> <!--/section-contacts-->
 
     <!--section-writeus-->
-    <section class="section-writeus">
+    <section class="section-writeus col-lg-6">
       <h2 class="section-title writeus-title">Напишите нам</h2>
         <form class="writeus-form" action="https://postman-echo.com/post" method="POST" autocomplete>
           <input required name="name" id="name" class="writeus-item" type="text" placeholder="Имя"><label for="name">Имя</label>
@@ -453,49 +439,51 @@
           <input id="send" class="writeus-item-btn" type="submit"><label for="send">Отправить</label>
         </form>
     </section> <!--/section-writeus-->
-    </div> <!--/hero-->
+    </div>
   </main> <!--/main-->
 
   <!--footer-->
-  <footer class="footer">
-    <div class="footer-left">
-      <p class="footer-info">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
-      <p class="footer-info">Представленная на сайте информация
-        носит справочный характер и не является публичной офертой</p>
-      <a href="#" class="footer-link">Политика конфиденциальности</a>
-    </div>
-    <address class="footer-center">
-      <p class="footer-info footer-address">11710, улица Юности, дом 5 строение 4, офис 2</p>
-      <div class="footer-tel">
-        <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
-        <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+  <div class="container">
+    <footer class="footer row">
+      <div class="footer-left col-lg-4">
+        <p class="footer-info">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
+        <p class="footer-info">Представленная на сайте информация
+          носит справочный характер и не является публичной офертой</p>
+        <a href="#" class="footer-link">Политика конфиденциальности</a>
       </div>
-      <div class="footer-mail">
-        <a href="mailto:lg.oona@mail.ru" class="footer-link">lg.oona@mail.ru</a>
-        <a href="mailto:hotels.ln@mail.ru" class="footer-link">hotels.ln@mail.ru</a>
-      </div>
-    </address>
-    <address class="footer-right">
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a href="#" class="footer-trip footer-icon" target="_blank"></a>
-        </li>
-        <li class="footer-item">
-          <a href="#" class="footer-twitter footer-icon" target="_blank"></a>
-        </li>
-        <li class="footer-item">
-          <a href="#" class="footer-facebook footer-icon" target="_blank"></a>
-        </li>
-        <li class="footer-item">
-          <a href="#" class="footer-vk footer-icon" target="_blank"></a>
-        </li>
-        <li class="footer-item">
-          <a href="#" class="footer-google footer-icon" target="_blank"></a>
-        </li>
-      </ul>
-    </address>
-  </footer> <!--/footer-->
-  </div> <!--/container-->
+      <address class="footer-center col-lg-5">
+        <p class="footer-info footer-address">11710, улица Юности, дом 5 строение 4, офис 2</p>
+        <div class="footer-tel">
+          <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+          <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+        </div>
+        <div class="footer-mail">
+          <a href="mailto:lg.oona@mail.ru" class="footer-link">lg.oona@mail.ru</a>
+          <a href="mailto:hotels.ln@mail.ru" class="footer-link">hotels.ln@mail.ru</a>
+        </div>
+      </address>
+      <address class="footer-right col-lg-3">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#" class="footer-trip footer-icon" target="_blank"></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-twitter footer-icon" target="_blank"></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-facebook footer-icon" target="_blank"></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-vk footer-icon" target="_blank"></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-google footer-icon" target="_blank"></a>
+          </li>
+        </ul>
+      </address>
+    </footer> <!--/footer-->
+  </div>
+  </div>
 </body>
 
 </html>

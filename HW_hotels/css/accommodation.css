@@ -1,12 +1,7 @@
 /* Accommodation
 ===================*/
-.accommodation-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .accommodation-list-item {
-    max-height: 440px;
+    position: relative;
     margin-bottom: 20px;
 
     border-radius: 12px;
@@ -14,27 +9,23 @@
   }
 
   .accommodation-list-item--last {
-    width: 373px;
-    height: 438px;
+    max-width: 100%;
+    height: 422px;
     display: flex;
     align-items: flex-end;
     position: relative;
+    margin-bottom: 20px;
     padding-left: 40px;
     padding-bottom: 55px;
 
     background: url('../img/accommodation/9.jpeg') no-repeat;
     background-size: cover;
+    border-radius: 12px;
   }
 
-  .accommodation-list-item:not(:nth-child(3n)) {
-    margin-right: 24px;
-  }
-
-  .accommodation-hotel {
-    position: relative;
-  }
 
   .accommodation-picture {
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }

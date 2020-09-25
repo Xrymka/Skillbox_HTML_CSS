@@ -1,26 +1,41 @@
 /* Advantages
 ===================*/
-.advantages-list {
-    display: flex;
-    flex-wrap: wrap;
+
+.advantages-item {
+  margin-bottom: 20px;
+  padding: 120px 44px 40px 40px;
+
+  border-radius: 12px;
   }
 
-  .advantages-item {
-    max-width: 275px;
-    margin-bottom: 20px;
-
-    border-radius: 12px;
-    background-color: var(--white);
+.bath {
+  background: url('../img/icons/bath.png') left 41px top 50px no-repeat var(--white);
   }
 
-  .advantages-item:not(:nth-child(4n)) {
-    margin-right: 22px;
+.hanger {
+  background: url('../img/icons/hanger.png') left 41px top 50px no-repeat var(--white);
   }
 
-  .advantages-card {
-    margin: 10px 45px 40px 45px;
-  }
+.heating {
+  background: url('../img/icons/heating.png') left 41px top 50px no-repeat var(--white);
+}
 
-  .card-title {
-    visibility: hidden;
-  }
+.key {
+  background: url('../img/icons/key.png') left 41px top 50px no-repeat var(--white);
+}
+
+.parking {
+  background: url('../img/icons/parking.png') left 41px top 50px no-repeat var(--white);
+}
+
+.reception {
+  background: url('../img/icons/reception.png') left 41px top 50px no-repeat var(--white);
+}
+
+.security-box {
+  background: url('../img/icons/security-box.png') left 41px top 50px no-repeat var(--white);
+}
+
+.swimming-pool {
+  background: url('../img/icons/swimming-pool.png') left 41px top 50px no-repeat var(--white);
+}

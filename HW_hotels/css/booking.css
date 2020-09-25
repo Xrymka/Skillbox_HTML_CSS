@@ -1,16 +1,12 @@
 /* Booking
 ===================*/
-.section-booking {
-  max-width: 520px;
-}
-
 .booking-form {
   display: flex;
   flex-wrap: wrap;
 }
 
 .booking-item {
-  min-width: 520px;
+  width: 100%;
   min-height: 70px;
 
   margin-bottom: 20px;
@@ -25,7 +21,7 @@
 }
 
 .booking-item-btn {
-  padding: 30px;
+  padding: 20px 30px;
 
   font-weight: 700;
   line-height: 1.2;

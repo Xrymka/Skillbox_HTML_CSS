@@ -1,23 +1,30 @@
 /* Services
 ===================*/
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .services-item {
-    max-width: 570px;
     margin-bottom: 25px;
 
     border-radius: 12px;
-    background-color: var(--white);
   }
 
-  .services-item:not(:nth-child(2n)) {
-    margin-right: 23px;
+  .champagne {
+    background: url('../img/services/champagne.jpeg') left top no-repeat var(--white);
   }
+
+  .restaurant {
+    background: url('../img/services/restaurant.jpeg') left top no-repeat var(--white);
+  }
+
+  .pool {
+    background: url('../img/services/pool.jpeg') left top no-repeat var(--white);
+  }
+
+  .cars {
+    background: url('../img/services/cars.jpeg') left top no-repeat var(--white);
+  }
+
 
   .services-pictire {
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
@@ -30,6 +37,7 @@
   .services-item-title {
     margin-top: 25px;
     margin-bottom: 10px;
+    padding-top: 200px;
 
     font-size: 22px;
     font-weight: 500;

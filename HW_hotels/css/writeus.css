@@ -1,9 +1,9 @@
 /* Write us
 ===================*/
 .section-writeus {
-    max-width: 340px;
     margin-top: 240px;
-    margin-left: 180px;
+    padding-left: 165px;
+    padding-right: 90px;
 
     text-align: center;
     align-items: center;
@@ -13,13 +13,9 @@
     margin: 0 0 20px;
   }
 
-  .writeus-form {
-    display: flex;
-    flex-direction: column;
-  }
 
   .writeus-item {
-    min-width: 340px;
+    width: 100%;
     min-height: 70px;
 
     margin-bottom: 25px;
@@ -41,6 +37,7 @@
 
   .writeus-item-btn {
     padding: 25px;
+    width: 100%;
 
     font-weight: 700;
     line-height: 24px;
