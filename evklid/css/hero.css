@@ -6,8 +6,8 @@
 }
 
 .hero__title {
-  width: 51%;
-  padding: 103px 0 32px 78px;
+  max-width: 51%;
+  padding: 104px 0 19px 78px;
 
   font-weight: 800;
   font-size: 70.3742px;
@@ -15,7 +15,7 @@
 }
 
 .hero__text {
-  width: 50%;
+  max-width: 50%;
   padding-left: 78px;
   padding-bottom: 97px;
 
@@ -42,4 +42,15 @@
 .hero__link:hover,
 .hero__link:focus {
   background: rgba(255, 153, 0, 0.6);
+}
+
+
+@media (max-width: 1366px) {
+  .hero__title {
+    max-width: none;
+  }
+
+  .hero__text {
+    max-width: none;
+  }
 }
