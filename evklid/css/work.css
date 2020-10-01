@@ -1,21 +1,25 @@
-.work__left,
-.work__right {
+.work__left {
   max-width: 49.15%;
+  margin-left: 2px;
 }
 
-.work__right {
-  margin-top: 18px;
+.work__block {
+  background: url('../image/work.jpg') top 17px right no-repeat;
 }
 
 .work__list {
   display: flex;
-  margin-top: 42px;
-  margin-left: 4px;
-  margin-bottom: 34px;
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+
+.work__list-item {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .work__list-item + .work__list-item {
-  margin-left: 95px;
+  margin-left: 75px;
 }
 
 .work__list-item:hover {
@@ -28,13 +32,14 @@
 }
 
 .work__text {
-  margin-bottom: 75px;
-  padding-right: 110px;
+  margin-bottom: 60px;
+  margin-right: 110px;
 }
 
 .work__link-more {
+  display: inline-block;
   margin-right: 25px;
-  padding: 19px 39px;
+  padding: 19px 38px;
 
   line-height: 20px;
   color: #fff;
