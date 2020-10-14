@@ -91,6 +91,10 @@
   }
 }
 
+@media (max-width: 1023px) {
+
+}
+
 @media (max-width: 992px) {
   .about__article {
     max-width: 100%;
@@ -99,4 +103,9 @@
   .about__list {
     max-width: 100%;
   }
+}
+
+
+@media (max-width: 767px) {
+
 }
