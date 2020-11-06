@@ -94,3 +94,11 @@ h1, h2, h3, h4, h5, h6, p, strong {
   width: 1px !important;
   overflow: hidden;
 }
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 954px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

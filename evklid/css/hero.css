@@ -46,10 +46,35 @@
 
 @media (max-width: 1366px) {
   .hero__title {
-    max-width: none;
+    max-width: 70%;
   }
 
   .hero__text {
-    max-width: none;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    padding: 160px 0px 114px 45px;
+    background: url('../image/main_1024.jpg') left bottom no-repeat;
+  }
+
+  .hero__title {
+    max-width: 80%;
+    margin-bottom: 18px;
+
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 71.14px;
+  }
+
+  .hero__text {
+    max-width: 80%;
+    margin-bottom: 110px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24,38px;
   }
 }
