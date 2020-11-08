@@ -48,13 +48,16 @@
   stroke: #FF9900;
 }
 
+.header__btn {
+  display: none;
+}
 
 .burger {
   width: 30px;
   padding: 10px 0;
 
   position: absolute;
-  left: 0;
+  left: 15px;
   z-index: 1;
 
   border: 0;
@@ -106,21 +109,31 @@
 }
 
 @media (max-width: 1199px) {
+  .header {
+    padding: 26px 0;
+  }
+
   .logo {
     margin: 0 auto;
   }
 
-  .nav__list-item:not(:last-child) {
+  .nav {
     display: none;
   }
 
+  .header__btn,
   .burger__item {
     display: block;
   }
 }
 
-@media (max-width: 1023px) {
-  .burger {
-    left: 15px;
+@media (max-width: 1024px) {
+  .logo {
+    width: 150px;
+    height: 48px;
+  }
+
+  .burger__item {
+    left: 35px;
   }
 }

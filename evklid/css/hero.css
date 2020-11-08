@@ -54,14 +54,14 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .hero {
     padding: 160px 0px 114px 45px;
     background: url('../image/main_1024.jpg') left bottom no-repeat;
   }
 
   .hero__title {
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 18px;
 
     font-weight: 800;
@@ -76,5 +76,10 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24,38px;
+  }
+
+  .hero__btn {
+    padding: 25.5px 38px;
+    min-width: 287px;
   }
 }
