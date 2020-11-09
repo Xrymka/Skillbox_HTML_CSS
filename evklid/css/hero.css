@@ -57,7 +57,7 @@
 @media (max-width: 1024px) {
   .hero {
     padding: 160px 0px 114px 45px;
-    background: url('../image/main_1024.jpg') left bottom no-repeat;
+    background: url('../image/main_1024.jpg') right bottom no-repeat;
   }
 
   .hero__title {
@@ -81,5 +81,24 @@
   .hero__btn {
     padding: 25.5px 38px;
     min-width: 287px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__hero {
+    padding: 0;
+  }
+
+  .hero {
+    padding: 191px 0px 114px 49px;
+    background: url('../image/main_1024.jpg') right top no-repeat;
+  }
+
+  .hero__title {
+    max-width: 100%;
+  }
+
+  .hero__text {
+    max-width: 100%;
   }
 }

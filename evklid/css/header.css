@@ -137,3 +137,10 @@
     left: 35px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+}

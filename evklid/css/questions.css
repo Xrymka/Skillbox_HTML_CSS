@@ -57,3 +57,25 @@
   background-color: #D2D2D2;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .questions__list-item-btn {
+    padding-right: 50px;
+  }
+
+  .questions__list-item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__questions {
+    margin-top: 58px;
+    letter-spacing: 0.2px;
+    margin-right: -10px;
+  }
+
+  .questions__list-item-btn {
+    padding-right: 90px;
+  }
+}
