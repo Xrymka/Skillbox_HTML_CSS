@@ -7,8 +7,10 @@
   padding-left: 2px;
 }
 
-.work__right {
+.work__block::after {
   background: url('../image/work.jpg') top 17px left no-repeat;
+  content: '';
+  display: block;
   background-size: cover;
   width: 50%;
   min-height: 465px;
@@ -35,7 +37,7 @@
 
 .work__title {
   font-size: 24px;
-  line-height: 42px;
+  line-height: 40px;
 }
 
 .work__text {
@@ -48,7 +50,7 @@
   margin-right: 25px;
   padding: 19px 38px;
 
-  line-height: 20px;
+  line-height: 19px;
   color: #fff;
   font-weight: 700;
 
@@ -84,9 +86,8 @@
     margin-right: 0;
   }
 
-  .work__right {
+  .work__block::after {
     background-position: center center;
-    width: 50%;
   }
 }
 
@@ -102,7 +103,7 @@
   }
 
   .work__left,
-  .work__right {
+  .work__block::after {
     width: 100%;
     margin-right: 0px;
   }
@@ -112,7 +113,7 @@
     max-width: 100%;
   }
 
-  .work__right {
+  .work__block::after {
     min-height: 284px;
     margin-bottom: 38px;
   }
