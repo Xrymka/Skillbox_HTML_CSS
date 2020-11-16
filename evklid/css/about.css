@@ -14,7 +14,7 @@
 .about__list-item {
   padding: 59px 116px 62px 300px;
 
-  border: 1px solid #CACACA;;
+  border: 1px solid #CACACA;
 }
 
 .cube {
@@ -165,5 +165,86 @@
 }
 
 @media (max-width: 576px) {
-  
+  .about__article {
+    min-height: 400px;
+    background: url('../image/article.jpg') center center no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+  }
+
+  .about__info {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+    bottom: -150px;
+    background-color: inherit;
+
+    color: #333;
+    font-weight: 400;
+  }
+
+  .about__article-text {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .about__article-link {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px 50px;
+
+    font-size: 12px;
+    line-height: 15px;
+    color: #F90;
+    font-weight: 700;
+  }
+
+  .about__article-link:hover,
+  .about__article-link:focus {
+    color: #fff;
+  }
+
+  .about__list-item {
+    padding: 102px 0px 0px 0px;
+
+    border: none;
+  }
+
+  .about__list-item-title {
+    font-weight: 500;
+  }
+
+  .cube {
+    background: url('../image/cube_mobile.png') top 0px left 0px no-repeat;
+    background-size: 100px;
+  }
+
+  .cogwheel {
+    background: url('../image/cogwheel_mobile.png') top 0px left 0px no-repeat;
+    background-size: 110px;
+  }
+}
+
+@media (max-width: 440px) {
+  .about__text {
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about__article {
+    min-height: 200px;
+    margin-bottom: 250px;
+  }
+
+  .about__info {
+    bottom: -200px;
+  }
+
+  .about__article-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }

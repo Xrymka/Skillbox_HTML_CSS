@@ -109,7 +109,7 @@
   }
 
   .hero {
-    padding: 32px 22px;
+    padding: 60px 22px;
     margin: 0 auto;
     text-align: center;
     background-size: cover;
@@ -135,5 +135,32 @@
 
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero {
+    padding: 32px 24px 40px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__text {
+    margin-bottom: 35px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+
+  .hero__btn {
+    min-width: 162px;
+    padding: 10px 15px;
+
+    font-size: 12px;
+    line-height: 15px;
   }
 }

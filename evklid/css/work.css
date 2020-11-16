@@ -122,3 +122,10 @@
     margin-bottom: 30px;
   }
 }
+
+
+@media (max-width: 576px) {
+  .work__title {
+    font-weight: 500;
+  }
+}

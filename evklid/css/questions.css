@@ -79,3 +79,9 @@
     padding-right: 90px;
   }
 }
+
+@media (max-width: 576px) {
+  .questions__list-item {
+    font-weight: 500;
+  }
+}

@@ -251,3 +251,14 @@ textarea.footer__input {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 576px) {
+  .footer__title {
+    font-size: 35px;
+  }
+
+  .footer__input {
+    min-width: 400px;
+  }
+}
+
