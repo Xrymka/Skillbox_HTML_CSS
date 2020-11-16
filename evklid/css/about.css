@@ -163,3 +163,7 @@
     background-size: 130px;
   }
 }
+
+@media (max-width: 576px) {
+  
+}
