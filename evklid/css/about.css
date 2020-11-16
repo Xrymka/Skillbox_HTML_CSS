@@ -195,7 +195,8 @@
 
     font-size: 12px;
     line-height: 15px;
-    color: #F90;
+    border-width: 2px;
+    color: #FF9900;
     font-weight: 700;
   }
 
@@ -246,5 +247,29 @@
   .about__article-text {
     font-size: 14px;
     line-height: 28px;
+  }
+
+  .cube,
+  .cogwheel {
+    padding-top: 55px;
+    background-size: 60px;
+  }
+
+  .about__list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .about__list-item-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__list-item-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about__article-link {
+    padding: 11px 42px;
   }
 }
