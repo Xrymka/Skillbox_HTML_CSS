@@ -233,8 +233,12 @@ textarea.footer__input {
 }
 
 @media (max-width: 1024px) {
+  .footer__left{
+    min-width: 255px;
+  }
+
   .footer__center {
-    width: 58%;
+    width: 80.5%;
     margin-right: 0px;
   }
 
@@ -244,7 +248,7 @@ textarea.footer__input {
   }
 
   .footer__check-label {
-    margin-left: 10px;
+    margin-left: 5px;
     padding-left: 16px;
   }
 }
@@ -269,6 +273,10 @@ textarea.footer__input {
 }
 
 @media (max-width: 576px) {
+  .footer__center {
+    width: 100%;
+  }
+  
   .footer__title {
     font-size: 35px;
   }
@@ -291,6 +299,7 @@ textarea.footer__input {
 
   .footer__left {
     width: 45%;
+    min-width: inherit;
     margin: 0 auto;
   }
 
