@@ -12,7 +12,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   margin: 0;
 
   font-family: 'Montserrat', 'Arial', sans-serif;
