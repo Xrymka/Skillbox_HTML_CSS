@@ -57,7 +57,7 @@
 } */
 
 .social__icon--facebook {
-  background-image: url('../image/icons.png');
+  background-image: url('../image/icons.svg');
   background-position: 0 0;
   width: 61px;
   height: 61px;
@@ -69,7 +69,7 @@
 }
 
 .social__icon--vk {
-  background-image: url('../image/icons.png');
+  background-image: url('../image/icons.svg');
   background-position: 0 -122px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .social__icon--insta {
-  background-image: url('../image/icons.png');
+  background-image: url('../image/icons.svg');
   background-position: 0 -242px;
 }
 
