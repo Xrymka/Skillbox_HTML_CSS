@@ -36,13 +36,13 @@
 }
 
 .questions__list-item::after {
-  content: '\2573';
+  content: '';
   display: block;
   position: absolute;
   margin-left: auto;
   width: 50px;
   height: 50px;
-  background-color: #ECECEC;
+  background: url('../image/Rectangle\ 12\ \(Stroke\).svg') no-repeat center #ECECEC;
   border-radius: 50%;
 
   text-align: center;
@@ -51,7 +51,7 @@
   right: 0;
   left: 0;
 
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%);
 }
 
 .questions__list-item:hover::after {
