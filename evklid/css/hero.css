@@ -1,9 +1,43 @@
 .hero {
-  background: url('../image/main.jpg') center center no-repeat;
-  background-size: cover;
-  padding: 104px 0 91px 78px;
-
   color: #fff;
+}
+
+.swiper-slide {
+  min-width: 100%;
+  min-height: 620px;
+  background-size: cover !important;
+  background-position: center center;
+}
+
+.hero__swiper--1 {
+  background: url('../image/main.jpg') no-repeat;
+}
+
+.hero__swiper--2 {
+  background: url('../image/main_2.jpg') no-repeat;
+}
+
+.hero__swiper--3 {
+  background: url('../image/main_3.jpg') no-repeat;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.hero__inner  {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  padding-left: 78px;
+  padding-top: 104px;
 }
 
 .hero__title {
@@ -43,21 +77,51 @@
   background: rgba(255, 153, 0, 0.6);
 }
 
+@media (max-width: 1728px) {
+  .hero__title,
+  .hero__text {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 1487px) {
+  .hero__title,
+  .hero__text {
+    max-width: 67%;
+  }
+}
+
 
 @media (max-width: 1366px) {
-  .hero__title {
-    max-width: 70%;
-  }
-
+  .hero__title,
   .hero__text {
     max-width: 70%;
   }
 }
 
+@media (max-width: 1292px) {
+  .swiper-slide {
+    padding-bottom: 20px;
+  }
+
+  .hero__title,
+  .hero__text {
+    max-width: 85%;
+  }
+}
+
 @media (max-width: 1024px) {
-  .hero {
-    padding: 160px 0px 114px 45px;
-    background: url('../image/main_1024.jpg') right bottom no-repeat;
+  .swiper-slide  {
+    min-height: 668px;
+  }
+
+  .hero__swiper--1 {
+    background: url('../image/main_1024.jpg') no-repeat;
+  }
+
+  .hero__inner {
+    padding-top: 160px;
+    padding-left: 45px;
   }
 
   .hero__title {
@@ -89,9 +153,18 @@
     padding: 0;
   }
 
-  .hero {
+  .swiper-slide  {
+    min-height: 700px;
+    background-position: center center;
+    padding-bottom: 0;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 20px;
+  }
+
+  .hero__inner {
     padding: 191px 0px 114px 49px;
-    background: url('../image/main_1024.jpg') right top no-repeat;
   }
 
   .hero__title {
