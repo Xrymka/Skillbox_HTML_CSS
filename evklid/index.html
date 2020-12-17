@@ -19,9 +19,6 @@
   <link rel="stylesheet" href="css/work.css">
   <link rel="stylesheet" href="css/questions.css">
   <link rel="stylesheet" href="css/footer.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="/js/index.js"></script>
   <title>Evklid</title>
 </head>
 
@@ -57,6 +54,19 @@
     <div class="container container__hero">
       <!-- hero -->
       <section class="hero">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
         <h1 class="visually-hidden">Евклид. Проектные решения лбой сложности</h1>
         <h2 class="hero__title">Проектные решения любой сложности</h2>
         <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
@@ -226,5 +236,10 @@
         (специалистов) участие в формировании стандартных подходов.</p>
     </div> <!-- /container -->
   </footer> <!-- /footer -->
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 </html>
