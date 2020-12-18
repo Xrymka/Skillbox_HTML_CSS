@@ -10,6 +10,7 @@
   <link rel="preload" href="fonts/montserrat-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
@@ -151,21 +152,74 @@
     <section class="questions">
       <div class="container">
         <h2 class="section__title section__questions">Часто задаваемые вопросы</h2>
-        <ul class="questions__list">
-          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Из чего формируется
-              конечная стоимость проекта?</button></li>
+        <ul class="questions__list" id="accordion">
+          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Из чего формируется конечная стоимость проекта?</button>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </li>
 
-          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">У меня есть свой
-              проект. Сможем ли мы его доработать / реализовать?</button></li>
+          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">У меня есть свой  проект. Сможем ли мы его доработать / реализовать?</button>
+            <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+          </li>
 
-          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Я выбираю между
-              разными компаниями. В чём ваше отличие?</button></li>
+          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Я выбираю между  разными компаниями. В чём ваше отличие?</button>
+            <div>
+              <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+                </p>
+                <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+                </p>
+            </div>
+          </li>
 
-          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Могу ли я делегировать
-              вам работу / согласование с подрядчиком / организацией?</button></li>
+          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+          </li>
 
-          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Могу ли я вернуть
-              деньги на каком-либо из этапов работ?</button></li>
+          <li class="questions__list-item"><button type="button" class="questions__list-item-btn">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
     </section> <!-- /questions -->
@@ -240,6 +294,8 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="/js/index.js"></script>
 </body>
 </html>

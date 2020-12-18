@@ -1,8 +1,9 @@
 /* Burger menu */
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#burger').addEventListener('click', function() {
-    document.querySelector('#menu').classList.toggle('active')
-  })
+    document.querySelector('#burger').classList.toggle('active'),
+    document.querySelector('#nav').classList.toggle('is-active')
+  });
 })
 
 /* Swiper */
@@ -18,3 +19,8 @@ var mySwiper = new Swiper('.swiper-container', {
 
   autoHeight: true,
 });
+
+/* Accordion */
+$( function() {
+  $( "#accordion" ).accordion();
+} );
