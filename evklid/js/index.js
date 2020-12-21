@@ -21,6 +21,12 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 /* Accordion */
-$( function() {
+$(function() {
   $( "#accordion" ).accordion();
-} );
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.questions__list-item-btn').addEventListener('click', function() {
+    document.querySelector('.questions__list-item-btn').classList.toggle('active')
+  });
+})
