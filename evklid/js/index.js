@@ -20,9 +20,19 @@ var mySwiper = new Swiper('.swiper-container', {
   autoHeight: true,
 });
 
+/* Tab-content */
+$( function() {
+  $( "#tabs" ).tabs();
+} );
+
+
 /* Accordion */
 $(function() {
-  $( "#accordion" ).accordion();
+  $( "#accordion" ).accordion({
+    active: false,
+    collapsible: true,
+    autoHeight: false
+  });
 });
 
 window.addEventListener('DOMContentLoaded', function() {

@@ -3,6 +3,7 @@
 }
 
 .work__left {
+  min-width: 50%;
   max-width: 51%;
   padding-left: 2px;
 }

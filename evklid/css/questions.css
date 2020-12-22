@@ -79,14 +79,12 @@
   margin-bottom: 40px;
 }
 
-.questions__list-item-btn.active .questions__list-item-btn:before {
-  transform-origin: left top;
-  transform: rotate(45deg) translateX(-4px);
+.ui-accordion-header-active .ui-state-active .active .questions__list-item-btn:before {
+  transform: rotate(45deg) translate(-10px, -10px);
 }
 
-..questions__list-item-btn.active ..questions__list-item-btn:after {
-  transform-origin: left bottom;
-  transform: rotate(-45deg) translateX(-5px);
+.questions__list-item-btn.active .questions__list-item-btn:after {
+  transform: rotate(45deg) translateX(1px);
 }
 
 @media (max-width: 1199px) {
