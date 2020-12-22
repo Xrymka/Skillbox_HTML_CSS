@@ -3,6 +3,14 @@
 }
 
 .work__left {
+  display: none;
+  min-width: 50%;
+  max-width: 51%;
+  padding-left: 2px;
+}
+
+.work__left-active {
+  display: block;
   min-width: 50%;
   max-width: 51%;
   padding-left: 2px;
