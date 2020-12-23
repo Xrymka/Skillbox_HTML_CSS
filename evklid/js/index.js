@@ -45,12 +45,18 @@ $(function() {
   $( "#accordion" ).accordion({
     active: false,
     collapsible: true,
-    autoHeight: false,
+    heightStyle: "content",
+    // icons: { "header": "plus", "activeHeader": "minus" }
   });
 });
 
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.questions__list-item-btn').addEventListener('click', function() {
-    document.querySelector('.questions__list-item-btn').classList.toggle('active')
-  });
-})
+
+
+
+// questions__list-item-icon::after {
+//   transform: rotate(45deg) translateX(1px);
+// }
+
+// questions__list-item-icon::before {
+//   transform: rotate(45deg) translate(-10px, -10px);
+// }
