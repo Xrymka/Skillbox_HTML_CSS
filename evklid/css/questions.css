@@ -112,11 +112,11 @@
   margin-bottom: 40px;
 }
 
-.activeHeader .questions__list-item-icon:before {
+.questions__list-item-btn.actives .questions__list-item-icon::before {
   transform: rotate(45deg) translate(-10px, -10px);
 }
 
-.activeHeader .questions__list-item-icon:after {
+.questions__list-item-btn.actives .questions__list-item-icon::after {
   transform: rotate(45deg) translateX(1px);
 }
 

@@ -47,16 +47,23 @@ $(function() {
     collapsible: true,
     heightStyle: "content",
     // icons: { "header": "plus", "activeHeader": "minus" }
-  });
-});
+  })
+})
 
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
+    item.addEventListener('click', function() {
+      // $this.querySelector('.questions__list-item-btn').classList.toggle('actives')
+      if (item.classList.contains('actives')) {
+        item.classList.remove('actives')
+      }
+      else  {
+        document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
+          item.classList.remove('actives')
+        })
+        item.classList.add('actives')
+      }
+    })
+  })
+})
 
-
-
-// questions__list-item-icon::after {
-//   transform: rotate(45deg) translateX(1px);
-// }
-
-// questions__list-item-icon::before {
-//   transform: rotate(45deg) translate(-10px, -10px);
-// }
