@@ -40,8 +40,11 @@
   margin-left: 75px;
 }
 
-.work__list-item:hover {
+.work__list-item-btn:hover,
+.work__list-item-btn:active,
+.work__list-item-btn:focus {
   color: #FF9900;
+  outline: none;
 }
 
 .work__title {
