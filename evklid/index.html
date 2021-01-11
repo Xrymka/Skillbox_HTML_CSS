@@ -43,10 +43,10 @@
             <li class="nav__list-item"><a href="#" class="nav__list-link">Контакты</a></li>
           </ul>
         </nav>
-        <button type="button" class="nav__list-btn header__btn">
+        <button type="button" aria-label="Найти" class="header__btn">
           <svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333" />
-            <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2" />
+            <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2"/>
           </svg>
         </button>
       </div>
@@ -70,7 +70,7 @@
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
           <div class="hero__inner">
-            <h1 class="visually-hidden">Евклид. Проектные решения лбой сложности</h1>
+            <h1 class="visually-hidden">Евклид</h1>
             <h2 class="hero__title">Проектные решения любой сложности</h2>
             <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
             <button class="hero__btn" type="button">Заказать расчёт</button>
@@ -243,7 +243,7 @@
     <div class="container footer--container">
       <!-- container -->
       <div class="footer__left">
-        <img src="image/logo_white.png" alt="логотип компании Эвклид" class="logo__footer">
+        <img src="image/logo_white.png" alt="логотип компании Эвклид" class="footer__logo">
         <ul class="footer__list">
           <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
           <li class="footer__list-item"><a href="#" class="footer__list-link">Проекты</a></li>
@@ -284,13 +284,13 @@
           <input class="footer__input" required type="text" name="name" id="name"
             placeholder="Фамилия, имя и отчество*">
 
-          <label class="visually-hidden" for="text">Имя</label>
+          <label class="visually-hidden" for="text">Введите имя</label>
           <input class="footer__input" required type="email" name="email" id="email" placeholder="E-mail*">
 
-          <label class="visually-hidden" for="text">E-mail</label>
+          <label class="visually-hidden" for="text">Введите e-mail</label>
           <textarea class="footer__input" name="text" id="text" cols="30" rows="5" placeholder="Сообщение"></textarea>
 
-          <label class="visually-hidden" for="text">Текст</label>
+          <label class="visually-hidden" for="text">Введите текст</label>
           <input class="footer__btn" type="submit" value="Отправить данные">
 
           <input class="footer__check" required type="checkbox" name="agree" id="agree">
