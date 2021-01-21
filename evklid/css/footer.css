@@ -111,6 +111,7 @@
   min-height: 60px;
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 25px;
 
   border: none;
   background: #414141;
@@ -118,10 +119,6 @@
 
 .footer__input::placeholder {
   color: #cacaca;
-}
-
-.footer__input:not(:last-child) {
-  margin-bottom: 25px;
 }
 
 textarea.footer__input {
@@ -167,6 +164,10 @@ textarea.footer__input {
   margin-left: 15px;
   padding-left: 20px;
   cursor: pointer;
+}
+
+.footer__check-label:focus {
+  outline: 1px solid #222;
 }
 
 .footer__check-label:before {

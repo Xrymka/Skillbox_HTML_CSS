@@ -61,6 +61,7 @@
   height: 71px;
 } */
 
+.questions__list-item:focus,
 .questions__list-item-btn:hover,
 .questions__list-item-btn:focus {
   color: #FF9900;
