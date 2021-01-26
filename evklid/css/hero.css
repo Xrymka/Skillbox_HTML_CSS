@@ -21,6 +21,10 @@
   background: url('../image/main_3.jpg') no-repeat;
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
@@ -113,6 +117,10 @@
 @media (max-width: 1024px) {
   .swiper-slide  {
     min-height: 668px;
+  }
+
+  .swiper-pagination {
+    display: block;
   }
 
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
