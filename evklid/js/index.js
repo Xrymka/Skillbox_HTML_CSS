@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 })
 
+
 /* Swiper */
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -19,6 +20,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
   autoHeight: true,
 });
+
 
 /* Tab-content */
 // $( function() {

@@ -226,12 +226,12 @@
 
   .burger.active .burger__item:before {
     transform-origin: left top;
-    transform: rotate(45deg) translateX(-3px);
+    transform: rotate(45deg) translateX(-2px);
   }
 
   .burger.active .burger__item:after {
     transform-origin: left bottom;
-    transform: rotate(-45deg) translateX(-3px);
+    transform: rotate(-45deg) translateX(-2px);
   }
 
   .nav__list {

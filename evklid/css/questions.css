@@ -168,6 +168,14 @@
   }
 }
 
+.questions__list-item-btn.actives .questions__list-item-icon::before {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+.questions__list-item-btn.actives .questions__list-item-icon::after {
+  transform: rotate(45deg) translateX(-1px);
+}
+
 @media (max-width: 440px) {
   .section__questions  {
     font-size: 24px;

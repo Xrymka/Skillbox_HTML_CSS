@@ -72,6 +72,35 @@
   background-color: #FF9900;
 }
 
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 90%;
+
+  padding: 10px;
+
+  visibility: hidden;
+
+  background-color: #FF9900;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.tooltip:focus .tooltiptext,
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.tooltip:focus {
+  outline: 1px solid #333;
+}
 
 @media (max-width: 1366px) {
   .about__list-item {
@@ -213,6 +242,11 @@
 
   .about__list-item-title {
     font-weight: 500;
+  }
+
+  .tooltip .tooltiptext {
+    min-width: 200px;
+    left: 90%;
   }
 
   .cube {
