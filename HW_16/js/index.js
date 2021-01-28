@@ -1,71 +1,20 @@
-/* Burger menu */
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#burger').addEventListener('click', function() {
-    document.querySelector('#burger').classList.toggle('active'),
-    document.querySelector('#nav').classList.toggle('is-active')
-  });
-})
+/* Map */
+function initMap() {
+  var coordinates = {lat: 47.212325, lng: 38.933663},
 
+      map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates
+      }),
 
-/* Swiper */
-var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
+      marker = new google.maps.Marker({
+          position: coordinates,
+          map: map
+      });
+}
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  autoHeight: true,
+image = '../location.jpg',
+marker = new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    icon: image
 });
-
-
-/* Tab-content */
-// $( function() {
-//   $( "#tabs" ).tabs();
-// } );
-
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.work__list-item').forEach(function(tabsBtn) {
-
-    tabsBtn.addEventListener('click', function(event) {
-      const path = event.currentTarget.dataset.path
-
-      document.querySelectorAll('.work__left').forEach(function(tabContent) {
-        tabContent.classList.remove('work__left-active')
-      })
-      document.querySelector(`[data-target="${path}"]`).classList.add('work__left-active')
-    })
-  })
-})
-
-
-/* Accordion */
-$(function() {
-  $( "#accordion" ).accordion({
-    active: false,
-    collapsible: true,
-    heightStyle: "content",
-    // icons: { "header": "plus", "activeHeader": "minus" }
-  })
-})
-
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
-    item.addEventListener('click', function() {
-      // $this.querySelector('.questions__list-item-btn').classList.toggle('actives')
-      if (item.classList.contains('actives')) {
-        item.classList.remove('actives')
-      }
-      else  {
-        document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {
-          item.classList.remove('actives')
-        })
-        item.classList.add('actives')
-      }
-    })
-  })
-})
-

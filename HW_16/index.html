@@ -6,9 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/scrollbar.css">
+  <link rel="stylesheet" href="css/tooltip.css">
   <script defer src="/js/index.js"></script>
   <title>Bonus</title>
 </head>
 <body>
+  <div class="container">
+    <!--Checkbox-->
+    <form class="form" method="POST">
+      <fieldset class="form__check">
+        <legend>Категории:</legend>
+        <label class="check" for="dinosaurs">
+          <input class="check__input" type="checkbox" name="dinosaurs" value="category">
+          Динозавры
+        </label>
+        <label class="check" for="bears">
+          <input class="check__input" type="checkbox" name="bears" value="category">
+          Медведи
+        </label>
+        <label class="check" for="roes">
+          <input class="check__input" type="checkbox" name="roes" value="category">
+          Косули
+        </label>
+        <label class="check" for="foxes">
+          <input class="check__input" type="checkbox" name="foxes" value="category">
+          Лисы
+        </label>
+        <label class="check" for="wolves">
+          <input class="check__input" type="checkbox" name="wolves" value="category">
+          Волки
+        </label>
+        <label class="check" for="horned">
+          <input class="check__input" type="checkbox" name="horned" value="category">
+          Олени и лоси
+        </label>
+      </fieldset>
+    </form> <!--/Checkbox-->
+
+    <!--Select-->
+    <form class="form2">
+      <label>
+        <select class="form__select">
+          <option value="">Материал</option>
+          <option value="wood">Древесина</option>
+          <option value="metal">Металл</option>
+          <option value="rock">Камень</option>
+          <option value="plastic">Пластик</option>
+          <option value="composite">Композитный</option>
+          <option value="gypsum">Гипс</option>
+        </select>
+      </label>
+    </form> <!--/Select-->
+
+    <!--Map-->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2661983692988!2d2.3519979158538646!3d48.872201707687914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e12309459c1%3A0x1be2a010c129f72c!2zNTQgUnVlIGR1IEZhdWJvdXJnIFNhaW50LURlbmlzLCA3NTAxMCBQYXJpcywg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2sru!4v1611842701959!5m2!1sru!2sru" width="460" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <!--/Map-->
+
+    <!--Scrollbar-->
+    <div class="scrollbar">
+      <p>Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.</p>
+    </div> <!--/Scrollbar-->
+
+    <!--Form-->
+    <form class="form__request" action="#" method="post" autocomplete="on">
+      <label class="request__name">Как Вас зовут?</label>
+      <input class="request__input" required type="text" name="name" placeholder="Имя*">
+
+      <label class="request__name">Укажите Ваш телефон</label>
+      <input class="request__input" required type="tel" name="phone" placeholder="Телефон*">
+
+      <label class="request__name">Укажите Ваш e-mail</label>
+      <input class="request__input" required type="email" name="email" placeholder="E-mail*">
+
+      <input class="request__btn" type="submit" value="Заказать">
+    </form> <!--/Form-->
+  </div>
 </body>
 </html>

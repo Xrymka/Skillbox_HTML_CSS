@@ -1,0 +1,28 @@
+.form {
+  max-height: 310px;
+  padding: 21px 30px 29px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form legend {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.51px;
+
+  margin-bottom: 20px;
+}
+
+.form__check {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  border: none;
+}
+
+.check:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.form__select {
+  min-width: 176px;
+  padding: 9px 15px 11px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.form__select option:first-child {
+  display: none;
+}
