@@ -1,26 +1,60 @@
-.form {
-  padding: 21px 30px 29px;
+.text {
+  max-width: 375px;
+  padding: 20px 29px 20px 29px;
+  margin-bottom: 20px;
 
   background-color: #fff;
-  border-radius: 10px;
+
+  line-height: 24px;
 }
 
-.form legend {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24.51px;
-
-  margin-bottom: 20px;
+.tooltip {
+  position: relative;
 }
 
-.form__check {
-  display: flex;
-  flex-direction: column;
-
-  padding: 0;
-  border: none;
+.tooltip:hover {
+  cursor: pointer;
 }
 
-.check:not(:last-child) {
-  margin-bottom: 20px;
+.tooltip:hover path {
+  fill: #CCB26E;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  bottom: 130%;
+  left: 50%;
+
+  padding: 5px 15px;
+  margin-left: -80px;
+
+  visibility: hidden;
+
+  background: #666;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #666 transparent transparent transparent;
+}
+
+.tooltip:focus .tooltiptext,
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:focus {
+  outline: 1px solid #333;
 }
