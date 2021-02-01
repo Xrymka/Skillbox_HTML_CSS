@@ -1,20 +1,27 @@
-/* Map */
-function initMap() {
-  var coordinates = {lat: 47.212325, lng: 38.933663},
+// /* Map */
+// function initMap() {
+//   var coordinates = {lat: 47.212325, lng: 38.933663},
 
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates
-      }),
+//       map = new google.maps.Map(document.getElementById('map'), {
+//           center: coordinates
+//       }),
 
-      marker = new google.maps.Marker({
-          position: coordinates,
-          map: map
-      });
-}
+//       marker = new google.maps.Marker({
+//           position: coordinates,
+//           map: map
+//       });
+// }
 
-image = '../location.jpg',
-marker = new google.maps.Marker({
-    position: coordinates,
-    map: map,
-    icon: image
+// image = '../location.jpg',
+// marker = new google.maps.Marker({
+//     position: coordinates,
+//     map: map,
+//     icon: image
+// });
+
+/* Select */
+const element = document.querySelector('select');
+const choices = new Choices(element, {
+  searchEnabled: false,
+  itemSelectText: ''
 });

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/checkbox.css">
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/scrollbar.css">
   <link rel="stylesheet" href="css/tooltip.css">
+  <script defer src="/js/choices.min.js"></script>
   <script defer src="/js/index.js"></script>
   <title>Knowledge base</title>
 </head>
@@ -21,35 +23,30 @@
     <form class="form" method="POST">
       <fieldset class="form__check">
         <legend>Категории:</legend>
-        <input class="check__input" type="checkbox" name="dinosaurs" value="category">
+        <input class="check__input" type="checkbox" name="dinosaurs" id="dinosaurs" value="category">
         <label class="check" for="dinosaurs">Динозавры</label>
-        <label class="check" for="bears">
-          <input class="check__input" type="checkbox" name="bears" value="category">
-          Медведи
-        </label>
-        <label class="check" for="roes">
-          <input class="check__input" type="checkbox" name="roes" value="category">
-          Косули
-        </label>
-        <label class="check" for="foxes">
-          <input class="check__input" type="checkbox" name="foxes" value="category">
-          Лисы
-        </label>
-        <label class="check" for="wolves">
-          <input class="check__input" type="checkbox" name="wolves" value="category">
-          Волки
-        </label>
-        <label class="check" for="horned">
-          <input class="check__input" type="checkbox" name="horned" value="category">
-          Олени и лоси
-        </label>
+
+        <input class="check__input" type="checkbox" name="bears" id="bears" value="category">
+        <label class="check" for="bears">Медведи</label>
+
+        <input class="check__input" type="checkbox" name="roes" id="roes" value="category">
+        <label class="check" for="roes">Косули</label>
+
+        <input class="check__input" type="checkbox" name="foxes" id="foxes" value="category">
+        <label class="check" for="foxes">Лисы</label>
+
+        <input class="check__input" type="checkbox" name="wolves" id="wolves" value="category">
+        <label class="check" for="wolves">Волки</label>
+
+        <input class="check__input" type="checkbox" name="horned" id="horned" value="category">
+        <label class="check" for="horned">Олени и лоси</label>
       </fieldset>
     </form> <!--/Checkbox-->
 
     <!--Select-->
     <form class="form2">
       <label>
-        <select class="form__select">
+        <select name="select">
           <option value="">Материал</option>
           <option value="wood">Древесина</option>
           <option value="metal">Металл</option>
