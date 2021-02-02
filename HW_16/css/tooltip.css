@@ -1,5 +1,6 @@
 .text {
   max-width: 375px;
+  max-height: 160px;
   padding: 20px 29px 20px 29px;
   margin-bottom: 20px;
 

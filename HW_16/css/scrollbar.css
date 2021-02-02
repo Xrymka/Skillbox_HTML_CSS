@@ -1,10 +1,31 @@
 .scrollbar {
   max-width: 400px;
+  min-width: 400px;
   max-height: 310px;
   padding: 20px 30px 0 29px;
   margin-bottom: 20px;
 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background-color: #fff;
   line-height: 24px;
+}
+
+.simplebar-scrollbar:before {
+  height: 70px;
+  width: 6px;
+  background: #CCB26E;
+  border-radius: 5px;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 6px;
+  bottom: 6px;
+}
+
+.simplebar-content-wrapper {
+  overflow: auto;
 }

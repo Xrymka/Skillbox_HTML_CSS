@@ -1,27 +1,6 @@
-/* .form__select {
-  min-width: 176px;
-  padding: 9px 15px 11px;
-  margin-bottom: 20px;
-
-  background-color: #fff;
-  border-radius: 10px;
-  border: none;
-}
-
-.form__select option:first-child {
-  display: none;
-} */
-
 .choices {
   min-width: 176px;
-  padding: 1.5px 7.5px 3.5px;
-  margin-bottom: 20px;
-
-  background-color: #fff;
-  border-radius: 10px;
-  border: none;
-
-  align-items: center;
+  font-size: 14px;
 }
 
 .choices__placeholder {
@@ -29,17 +8,33 @@
 }
 
 .choices__inner {
+  position: relative;
+  min-height: auto;
   background-color: #fff;
+  padding: 9px 15px 11px;
+
+  border-radius: 10px;
   border: none;
+  z-index: 10;
 
   color: #333;
 }
 
-.is-focused {
-  border: 1px solid #CCB26E;
+.is-focused,
+.is-open {
+  border-radius: 10px;
 }
 
 .is-open .choices__list--dropdown {
+  border: 1px solid #CCB26E;
+  min-width: 176px;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-radius: 10px;
+  opacity: 1;
+  z-index: 10;
   border: 1px solid #CCB26E;
 }
 
@@ -47,19 +42,59 @@
   padding: 10px 15px;
 }
 
-.choices__list--dropdown {
+.choices__list.choices__list--dropdown {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-top: -10px;
+  border: 1px solid #CCB26E;
+  border-top: none;
+  margin-top: -15px;
   left: 0;
-  z-index: -1;
+}
+
+.choices__item--choice:first-child {
+  display: none;
+}
+
+.choices__item--choice:nth-child(2) {
+  padding-top: 20px;
 }
 
 .choices[data-type*=select-one]:after {
-
+  background: url('../Rectangle141.svg') no-repeat;
+  margin-top: -7px;
+  right: 14.7px;
+  background-size: 12px 12px;
+  height: 12px;
+  width: 12px;
+  border-style: none;
+  z-index: 50;
 }
 
 .choices[data-type*=select-one].is-open:after {
-
+  background: url('../Rectangle41.svg') no-repeat;
+  margin-top: -4px;
+  right: 14.7px;
+  background-size: 12px 12px;
+  height: 12px;
+  width: 12px;
+  border-style: none;
+  z-index: 50;
 }
 
+.is-flipped.is-open .choices__inner {
+  border-radius: 10px;
+}
+
+.is-flipped .choices__list--dropdown {
+  margin-bottom: -15px;
+  border: 1px solid #CCB26E;
+  border-bottom: none;
+}
+
+.is-flipped .choices__item--choice:nth-child(2) {
+  padding-top: 10px;
+}
+
+.is-flipped .choices__item--choice:last-child {
+  padding-bottom: 20px;
+}
