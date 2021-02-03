@@ -22,7 +22,7 @@ function init() {
 
   var myPlacemark = new ymaps.Placemark([48.8722, 2.3542], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'subtract.svg',
+    iconImageHref: 'img/subtract.svg',
     iconImageSize: [28, 40]
   });
   myMap.geoObjects.add(myPlacemark);
@@ -34,11 +34,11 @@ var im = new Inputmask("+7 (999) 999-99-99");
 
 im.mask(selector);
 
-new JustValidate('.form__request', {
+new JustValidate('.js-form', {
   rules: {
     email: {
       required: true,
-      email: true
+      email: true,
     },
     tel: {
       required: true,
@@ -50,7 +50,26 @@ new JustValidate('.form__request', {
     name: {
       required: true,
       minLength: 2,
-      maxLength: 20
+      maxLength: 20,
     },
   },
+
+  messages: {
+    name: {
+      maxLength: 'Как Вас зовут? Максимум :value букв',
+      minLength: 'Как Вас зовут? Минимум :value буквы',
+      required: 'Как Вас зовут?'
+    },
+    email: {
+      required:'Укажите Ваш e-mail',
+      email: 'Укажите Ваш e-mail'
+    },
+    tel: {
+      required:'Укажите Ваш телефон',
+      tel: 'Укажите Ваш телефон',
+      error: 'Укажите Ваш телефон'
+    },
+  },
+
+  colorWrong: "#FF5C00"
 });

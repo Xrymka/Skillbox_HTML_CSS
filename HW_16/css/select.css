@@ -60,7 +60,7 @@
 }
 
 .choices[data-type*=select-one]:after {
-  background: url('../Rectangle141.svg') no-repeat;
+  background: url('../img/Rectangle141.svg') no-repeat;
   margin-top: -7px;
   right: 14.7px;
   background-size: 12px 12px;
@@ -71,7 +71,7 @@
 }
 
 .choices[data-type*=select-one].is-open:after {
-  background: url('../Rectangle41.svg') no-repeat;
+  background: url('../img/Rectangle41.svg') no-repeat;
   margin-top: -4px;
   right: 14.7px;
   background-size: 12px 12px;

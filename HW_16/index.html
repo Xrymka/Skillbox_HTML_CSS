@@ -14,13 +14,13 @@
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/scrollbar.css">
   <link rel="stylesheet" href="css/tooltip.css">
-  <script defer src="/js/choices.min.js"></script>
+  <script defer src="js/choices.min.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <script defer src="/js/inputmask.min.js"></script>
-  <script defer src="/js/just-validate.min.js"></script>
+  <script defer src="js/inputmask.min.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
   <!-- <script defer src="/js/simplebar.js"></script> -->
-  <script defer src="/js/index.js"></script>
+  <script defer src="js/index.js"></script>
   <title>Knowledge base</title>
 </head>
 <body>
@@ -74,27 +74,30 @@
     </div> <!--/Scrollbar-->
 
     <!--Form-->
-    <form class="form__request" action="#" method="post" autocomplete="on">
-      <label class="request__name">Как Вас зовут?</label>
-      <input class="request__input"
-        type="text"
-        name="name"
-        placeholder="Имя*"
-        data-validate-field="name">
+    <form class="form__request js-form" action="#" method="post" autocomplete="on">
+      <label class="request__name">
+        <input class="request__input"
+          type="text"
+          name="name"
+          placeholder="Имя*"
+          data-validate-field="name">
+      </label>
 
-      <label class="request__name">Укажите Ваш телефон</label>
-      <input class="request__input"
-        type="tel"
-        name="phone"
-        placeholder="Телефон*"
-        data-validate-field="phone">
+      <label class="request__name">
+        <input class="request__input"
+          type="tel"
+          name="phone"
+          placeholder="Телефон*"
+          data-validate-field="phone">
+      </label>
 
-      <label class="request__name">Укажите Ваш e-mail</label>
-      <input class="request__input"
-        type="email"
-        name="email"
-        placeholder="E-mail*"
-        data-validate-field="mail">
+      <label class="request__name">
+        <input class="request__input"
+          type="email"
+          name="email"
+          placeholder="E-mail*"
+          data-validate-field="mail">
+      </label>
 
       <input class="request__btn" type="submit" value="Заказать">
     </form> <!--/Form-->
