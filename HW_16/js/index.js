@@ -55,14 +55,14 @@ new JustValidate('.js-form', {
   },
 
   messages: {
+    email: {
+      email: 'Укажите Ваш e-mail',
+      required: 'Укажите Ваш e-mail'
+    },
     name: {
       maxLength: 'Как Вас зовут? Максимум :value букв',
       minLength: 'Как Вас зовут? Минимум :value буквы',
       required: 'Как Вас зовут?'
-    },
-    email: {
-      required:'Укажите Ваш e-mail',
-      email: 'Укажите Ваш e-mail'
     },
     tel: {
       required:'Укажите Ваш телефон',
