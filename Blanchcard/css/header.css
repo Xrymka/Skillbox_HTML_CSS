@@ -1,0 +1,37 @@
+.header__up {
+  background-color: #000;
+
+  font-size: 18px;
+  color: #fff;
+}
+
+.container--header {
+  display: flex;
+  height: 100%;
+  padding: 30px 15px;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header__logo-link {
+  max-height: 40px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list-item {
+  margin-right: 62px;
+}
+
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+.header__entry {
+  padding-left: 20px;
+  background: url('../image/entry.svg') no-repeat left center;
+}
