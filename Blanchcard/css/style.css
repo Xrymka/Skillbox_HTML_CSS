@@ -39,6 +39,26 @@ button {
   cursor: pointer;
 }
 
+button:hover,
+a:hover {
+  color: #C283F3;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid #7943A4;
+}
+
+button:active {
+  color: #7943A4;
+  outline: none;
+}
+
+a:active {
+  color: #9D5CD0;
+  outline: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
