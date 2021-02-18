@@ -9,18 +9,20 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/gallery.css">
+  <!-- <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/editions.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/footer.css"> -->
+  <script defer src="js/focus-visible.js"></script>
   <script defer src="js/swiper-bundle.js"></script>
   <script defer src="js/jquery.js"></script>
   <script defer src="js/jguery-ui.js"></script>
-  <script defer src="/js/index.js"></script>
+  <script defer src="js/index.js"></script>
   <title>Blanchcard - художественная галерея</title>
 </head>
 
@@ -93,15 +95,15 @@
     <div class="header__down">
       <div class="container container--header__down">
         <ul class="header__down-list">
-          <li class="header__down-list-item">Реализм
+          <li class="header__down-list-item" tabindex="0">Реализм
             <ul class="down__list">
-              <li class="down__list-item">Тинторетто</li>
+              <li class="down__list-item"><a href="#">Тинторетто</a></li>
               <li class="down__list-item">Фридрих</li>
               <li class="down__list-item">Леонадро</li>
               <li class="down__list-item">Верроккью</li>
             </ul>
           </li>
-          <li class="header__down-list-item">Импрессионизм
+          <li class="header__down-list-item" tabindex="0">Импрессионизм
             <ul class="down__list">
               <li class="down__list-item">Моне</li>
               <li class="down__list-item">Сислей</li>
@@ -109,7 +111,7 @@
               <li class="down__list-item">Ренуар</li>
             </ul>
           </li>
-          <li class="header__down-list-item">Постимпрессионизм
+          <li class="header__down-list-item" tabindex="0">Постимпрессионизм
             <ul class="down__list">
               <li class="down__list-item">Ван Гог</li>
               <li class="down__list-item">Сезанн</li>
@@ -117,7 +119,7 @@
               <li class="down__list-item">Сёра</li>
             </ul>
           </li>
-          <li class="header__down-list-item">Авангард
+          <li class="header__down-list-item" tabindex="0">Авангард
             <ul class="down__list">
               <li class="down__list-item">Кандинский</li>
               <li class="down__list-item">Маринетти</li>
@@ -125,7 +127,7 @@
               <li class="down__list-item">Пикассо</li>
             </ul>
           </li>
-          <li class="header__down-list-item">Футуризм
+          <li class="header__down-list-item" tabindex="0">Футуризм
             <ul class="down__list">
               <li class="down__list-item">Карра</li>
               <li class="down__list-item">Прателла</li>
@@ -134,14 +136,32 @@
             </ul>
           </li>
         </ul>
+        <form class="header__down-right">
+          <button type="button" aria-label="Поиск" class="header__btn">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+          </button>
+          <label>
+            <input type="search" placeholder="Поиск по сайту" class="header__input">
+          </label>
+        </form>
       </div>
     </div>
   </header> <!-- /header -->
 
   <main class="main">
-    <div class="container">
-      <!-- hero -->
-      <section class="hero">
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="visually-hidden">Blanchcard - художественная галерея</h1>
+          <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+          <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+          <button class="hero__btn" type="button">Подписаться на рассылку</button>
+        </div>
+      </div>
         <!-- Slider main container -->
         <div class="swiper-container">
           <!-- Additional required wrapper -->
@@ -150,18 +170,9 @@
               <div class="swiper-slide hero__swiper--1"><span class="visually-hidden">Слайд 1</span></div>
               <div class="swiper-slide hero__swiper--2"><span class="visually-hidden">Слайд 2</span></div>
               <div class="swiper-slide hero__swiper--3"><span class="visually-hidden">Слайд 3</span></div>
-              ...
           </div>
-          <div class="hero__inner">
-            <h1 class="visually-hidden">Blanchcard - художественная галерея</h1>
-            <h2 class="hero__title">Проектные решения любой сложности</h2>
-            <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
-            <button class="hero__btn" type="button">Заказать расчёт</button>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </section> <!-- /hero -->
-    </div>
+    </section> <!-- /hero -->
 
     <!-- about -->
     <section class="about" id="about">

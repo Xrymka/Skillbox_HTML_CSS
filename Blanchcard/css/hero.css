@@ -1,0 +1,82 @@
+.hero {
+  max-height: 800px;
+  margin-bottom: 80px;
+
+  color: #fff;
+}
+
+.swiper-container {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide {
+  min-width: 100%;
+  min-height: 800px;
+  background-size: cover !important;
+  background-position: bottom center;
+}
+
+.hero__swiper--1 {
+  background: url('../image/hero/1.jpg') no-repeat;
+}
+
+.hero__swiper--2 {
+  background: url('../image/hero/2.jpg') no-repeat;
+}
+
+.hero__swiper--3 {
+  background: url('../image/hero/3.jpg') no-repeat;
+}
+
+.hero__inner {
+  position: relative;
+  max-width: 550px;
+  z-index: 1;
+
+  padding: 69px 0 122px;
+}
+
+.hero__title {
+  margin-bottom: 19px;
+
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: 700;
+}
+
+.hero__text {
+  margin-bottom: 92px;
+
+  line-height: 30px;
+}
+
+.hero__btn {
+  min-width: 314px;
+  min-height: 70px;
+  padding: 22.5px 35px;
+  background-color: #9D5CD0;
+  border-radius: 100px;
+  transition: border .1s linear, background .1s linear;
+  border: 3px solid #9D5CD0;
+}
+
+.hero__btn:hover {
+  color: #fff;
+  border: 3px solid #D1A9F0;
+}
+
+.hero__btn:focus-visible {
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #C283F3;
+}
+
+.hero__btn:active {
+  color: #fff;
+  background-color: #7943A4;
+  border: 3px solid #D1A9F0;
+}

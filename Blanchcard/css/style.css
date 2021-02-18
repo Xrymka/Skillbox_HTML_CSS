@@ -14,12 +14,20 @@ body {
   scroll-behavior: smooth;
   margin: 0;
 
-  font-family: 'Open-Sans';
+  font-family: 'Open Sans';
 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #333;
   line-height: 2;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+*:focus {
+  outline: 2px solid #7943A4;
 }
 
 button, input, textarea {
@@ -65,6 +73,7 @@ img {
 }
 
 a {
+  transition: color .1s linear;
   text-decoration: none;
   color: inherit;
 }
@@ -97,6 +106,15 @@ h1, h2, h3, h4, h5, h6, p, strong {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+/* section title */
+.section__title {
+  margin-bottom: 30px;
+
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
 }
 
 /* @media (max-width: 1024px) {
