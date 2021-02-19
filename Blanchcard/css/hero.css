@@ -1,6 +1,6 @@
 .hero {
   max-height: 800px;
-  margin-bottom: 80px;
+  margin-bottom: 89px;
 
   color: #fff;
 }
@@ -37,7 +37,7 @@
   max-width: 550px;
   z-index: 1;
 
-  padding: 69px 0 122px;
+  padding: 70px 0 122px;
 }
 
 .hero__title {
