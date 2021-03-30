@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: #e5e5e5;
+		}
+	</style>
+</head>
+<body>
+	<svg viewBox="0 0 166 149" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+		<!-- <circle cx="84" cy="70" r="70" id="head" /> -->
+		<!-- <ellipse cx="83" cy="100.5" rx="10" ry="7.5" fill="010101" /> -->
+
+		<defs>
+			<!-- Группа фигур -->
+			<g>
+				<circle r="70" id="head" fill="#ffffff" />
+				<circle r="3" id="shine" fill="#ffffff" />
+				<ellipse rx="10" ry="7.5" id="nose-inner_ear" fill="#010101" />
+				<circle r="7" id="pupil" fill="#010101" />
+				<ellipse rx="25" ry="18.5" id="lug" fill="#4a4a4a" />
+				<ellipse rx="15" ry="18.5" id="wool" fill="#4a4a4a" />
+			</g>
+
+			<!-- Глаз -->
+			<g id="eye">
+				<use xlink:href="#wool" />
+				<use xlink:href="#pupil" y="-3.5" />
+				<use xlink:href="#shine" x="-2" y="-6.5" />
+			</g>
+
+			<!-- Ухо -->
+			<g id="ear">
+				<use xlink:href="#lug" />
+				<use xlink:href="#nose-inner_ear" />
+			</g>
+
+			<!-- Панда -->
+			<g id="panda">
+				<use xlink:href="#ear" x="8" y="43" transform="rotate(-45)"  />
+				<use xlink:href="#ear" x="110" y="-75" transform="rotate(45)"  />
+				<use xlink:href="#head" x="83" y="79" />
+				<use xlink:href="#nose-inner_ear" x="83" y="100.5" />
+				<use xlink:href="#eye" x="116" y="82.5" />
+				<use xlink:href="#eye" x="50" y="82.5" />
+			</g>
+		</defs>
+
+		<use xlink:href="#panda" x="0" y="0" />
+	</svg>
+</body>
+</html>
