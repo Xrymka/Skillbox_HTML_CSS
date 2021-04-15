@@ -4,38 +4,43 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container container--header">
+      <button class="burger__btn" aria-label="Открыть меню">
+        <span class="burger__line">Линия 1</span>
+        <span class="burger__line">Линия 2</span>
+        <span class="burger__line">Линия 3</span>
+      </button>
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="Логотип 12:21">
+      </a>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href=""></a>
+            <a href="#">Вход</a>
           </li>
           <li class="nav__list-item">
-            <a href=""></a>
-          </li>
-          <li class="nav__list-item">
-            <a href=""></a>
-          </li>
-          <li class="nav__list-item">
-            <a href=""></a>
-          </li>
-          <li class="nav__list-item">
-            <a href=""></a>
-          </li>
-          <li class="nav__list-item">
-            <a href=""></a>
-          </li>
-          <li class="nav__list-item">
-            <a href=""></a>
+            <a href="#">Услуги
+              <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928935C33.9526 0.538411 33.3195 0.538411 32.9289 0.928935C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-8.74228e-08 9L40 9L40 7L8.74228e-08 7L-8.74228e-08 9Z" fill="white"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="visually-hidden">12:21 - Выбери свой look!</h1>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
