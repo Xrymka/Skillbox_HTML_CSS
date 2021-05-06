@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5, h6, p, strong {
 body {
   font-family: 'Gilroy', sans-serif;
   color: #fff;
-
-  background: url('../img/bg.jpg') top no-repeat;
+  background: url('../img/bg.jpg') bottom no-repeat;
+  background-size: cover;
 }
 
 .visually-hidden {
@@ -81,11 +81,13 @@ body {
 }
 
 .container--header {
+  width: 100%;
   min-height: 138px;
 }
 
 .header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   border-bottom: 2px solid rgba(196, 196, 196, 0.5);;
 }
 
@@ -165,13 +167,15 @@ header::after {
 }
 
 .hero {
-  padding-top: 175px;
+  position: relative;
+  height: 100vh;
   overflow: hidden;
   width: 100%;
 }
 
 .hero__left {
   max-width: 740px;
+  margin-top: 12%;
 }
 
 .hero__title {
