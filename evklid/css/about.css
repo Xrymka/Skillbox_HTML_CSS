@@ -33,19 +33,17 @@
 
 /* about__article */
 .about__article {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
   min-height: 622px;
   width: 49.2%;
-  background: url('../image/article.jpg') top left no-repeat;
+  background: url('../image/article.jpg') center no-repeat;
   background-size: cover;
   font-weight: 700;
   color: #fff;
 }
 
 .about__info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   align-items: center;
   padding-top: 42px;
