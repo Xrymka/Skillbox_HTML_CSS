@@ -135,6 +135,11 @@
   display: block;
 }
 
+.logo {
+  margin: 0 auto;
+}
+
+
 @media (max-width: 1199px) {
   .header {
     padding: 26px 0;

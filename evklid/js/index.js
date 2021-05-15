@@ -23,10 +23,6 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
 /* Tab-content */
-// $( function() {
-//   $( "#tabs" ).tabs();
-// } );
-
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.work__list-item').forEach(function(tabsBtn) {
 

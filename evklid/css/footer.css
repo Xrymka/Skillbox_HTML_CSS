@@ -17,6 +17,10 @@
 }
 
 /* footer__left */
+.footer__logo {
+  width: 224px;
+}
+
 .footer__list {
   margin-top: 1px;
   margin-bottom: 105px;
@@ -51,10 +55,6 @@
   background-repeat: no-repeat;
 }
 
-/* .social__icon:hover path,
-.social__icon:focus path {
-  fill: #cacaca;
-} */
 
 .social__icon--facebook {
   background-image: url('../image/icons.png');
@@ -291,6 +291,10 @@ textarea.footer__input {
 }
 
 @media (max-width: 576px) {
+  .footer__logo {
+    width: 131px;
+  }
+
   .footer__center {
     width: 100%;
   }
