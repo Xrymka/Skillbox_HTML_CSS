@@ -93,11 +93,11 @@
 }
 
 .questions__list-item-btn.actives .questions__list-item-icon::before {
-  transform: rotate(45deg) translate(-10px, -10px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .questions__list-item-btn.actives .questions__list-item-icon::after {
-  transform: rotate(45deg) translateX(1px);
+  transform: rotate(45deg) translateX(0px);
 }
 
 @media (max-width: 1199px) {

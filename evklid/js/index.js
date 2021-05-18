@@ -40,13 +40,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
 /* Accordion */
 $(function() {
-  $( "#accordion" ).accordion({
+  $( "#my-accordion" ).accordion({
     active: false,
     collapsible: true,
     heightStyle: "content",
     // icons: { "header": "plus", "activeHeader": "minus" }
   })
 })
+
+  jQuery(document).ready(function($){
+    $("#my-accordion").accordionjs({
+      activeIndex: false,
+    });
+  });
 
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.questions__list-item-btn').forEach(function(item) {

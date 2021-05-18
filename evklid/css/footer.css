@@ -19,6 +19,7 @@
 /* footer__left */
 .footer__logo {
   width: 224px;
+  height: 72px;
 }
 
 .footer__list {
@@ -195,14 +196,15 @@ textarea.footer__input {
   content: '';
   display: block;
   position: absolute;
-  width: 14px;
-  height: 14px;
-  background: url('../image/check.svg') no-repeat;
-  background-size: 14px 14px;
+  width: 6px;
+  height: 9px;
+  border-bottom: 2px solid #97EE3F;
+  border-right: 2px solid #97EE3F;
+  transform: rotate(45deg);
   opacity: 0;
 
-  top: 50%;
-  left: 0;
+  top: 30%;
+  left: 1.5%;
   z-index: 2;
 
   transform: translateY(-50%);
@@ -210,6 +212,7 @@ textarea.footer__input {
 
 .footer__check:checked + .footer__check-label:after {
   opacity: 1;
+  transform: rotate(45deg);
 }
 
 @media (max-width: 1736px) {
@@ -293,6 +296,7 @@ textarea.footer__input {
 @media (max-width: 576px) {
   .footer__logo {
     width: 131px;
+    height: 42px;
   }
 
   .footer__center {
