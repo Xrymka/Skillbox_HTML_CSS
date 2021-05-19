@@ -39,15 +39,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 /* Accordion */
-$(function() {
-  $( "#my-accordion" ).accordion({
-    active: false,
-    collapsible: true,
-    heightStyle: "content",
-    // icons: { "header": "plus", "activeHeader": "minus" }
-  })
-})
-
   jQuery(document).ready(function($){
     $("#my-accordion").accordionjs({
       activeIndex: false,
