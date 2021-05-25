@@ -1,0 +1,38 @@
+body {
+  background: brown;
+}
+
+body h1 {
+  position: relative;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+body h1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.block__el {
+  color: #681a1a;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 10px 25px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.container__big {
+  padding: 10px 25px;
+  margin: 0 auto;
+  background-color: gray;
+}
+/*# sourceMappingURL=styles.css.map */

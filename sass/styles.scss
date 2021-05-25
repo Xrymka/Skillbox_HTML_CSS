@@ -1,3 +1,47 @@
-body {
-  background: red;
+$colorBg: brown;
+
+@mixin makeContainer {
+  padding: 10px 25px;
+  margin: 0 auto;
+  background-color: gray;
 }
+
+@mixin ghost {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(red, .3);
+    pointer-events: none;
+  }
+}
+
+body {
+  background: $colorBg;
+
+  h1 {
+    position: relative;
+    font-size: 50px;
+    font-family: sans-serif;
+
+    @include ghost();
+  }
+}
+
+.block {
+  &__el {
+    color: darken($colorBg, 15%);
+  }
+}
+
+.container {
+  max-width: 1170px;
+  @include makeContainer();
+}
+
+.container__big {
+  @include makeContainer();
+} 
