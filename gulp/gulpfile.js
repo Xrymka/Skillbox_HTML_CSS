@@ -14,17 +14,15 @@ const browserSync = require('browser-sync').create();
 
 const clean = () => {
   return del(['dist'])
-}
+};
 
 const resources = () => {
   return src('src/resources/**')
     .pipe(dest('dist'))
-}
-
+};
 
 const styles = () => {
   return src('src/styles/**/*.css')
-    .pipe(sourcemaps.init())
     .pipe(concat('main.css'))
     .pipe(autoprefixes({
       cascade: false
@@ -32,9 +30,7 @@ const styles = () => {
     .pipe(cleanCSS({
       level: 2
     }))
-    .pipe(sourcemaps.write())
     .pipe(dest('dist'))
-    .pipe(browserSync.stream())
 };
 
 const htmlMinify = () => {
@@ -43,7 +39,6 @@ const htmlMinify = () => {
       collapseWhitespace: true,
     }))
     .pipe(dest('dist'))
-    .pipe(browserSync.stream())
 };
 
 const svgSprites = () => {
@@ -63,7 +58,6 @@ const scripts = () => {
     'src/js/components/**/*.js',
     'src/js/main.js'
   ])
-  .pipe(sourcemaps.init())
   .pipe(babel({
     presets: ['@babel/env']
   }))
@@ -71,18 +65,7 @@ const scripts = () => {
   .pipe(uglify({
     toplevel: true
   }).on('error', notify.onError()))
-  .pipe(sourcemaps.write())
   .pipe(dest('dist'))
-  .pipe(browserSync.stream())
-}
-
-const watchFiles = () => {
-  browserSync.init({
-    open: "external",
-    server: {
-      baseDir: 'dist'
-    }
-  })
 }
 
 const images = () => {
@@ -96,6 +79,15 @@ const images = () => {
   .pipe(dest('dist/images'))
 }
 
+const watchFiles = () => {
+  browserSync.init({
+    open: "external",
+    server: {
+      baseDir: 'dist'
+    }
+  })
+}
+
 watch('src/**/*.html', htmlMinify)
 watch('src/**/*.css', styles)
 watch('src/images/svg/**/*/svg', svgSprites)
@@ -105,4 +97,47 @@ watch('src/resources/**', resources)
 exports.styles = styles;
 exports.scripts = scripts;
 exports.htmlMinify = htmlMinify;
-exports.default = series(clean, resources, htmlMinify, scripts, styles, images, svgSprites, watchFiles)
+exports.default = series(clean, resources, htmlMinify, scripts, styles, images, svgSprites)
+
+const img = () => {
+  return src([
+    'src/images/**/*.jpg',
+    'src/images/**/*.jpeg',
+    'src/images/**/*.png',
+    'src/images/*.svg'
+  ])
+  .pipe(dest('dist/images'))
+}
+
+const stylesDev = () => {
+  return src('src/styles/**/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixes({
+      cascade: false
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
+};
+
+const htmlMinifyDev = () => {
+  return src('src/**/*.html')
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
+};
+
+const scriptsDev = () => {
+  return src([
+    'src/js/components/**/*.js',
+    'src/js/main.js'
+  ])
+  .pipe(sourcemaps.init())
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(sourcemaps.write())
+  .pipe(dest('dist'))
+  .pipe(browserSync.stream())
+}
+
+exports.dev = series(clean, resources, htmlMinifyDev, scriptsDev, stylesDev, img, svgSprites, watchFiles)
